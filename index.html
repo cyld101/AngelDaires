@@ -1,47 +1,76 @@
+
+<!--
+====================================================
+ Angel Daires - Home Page
+ Organized & Notated HTML
+====================================================
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angel Inc - Home</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Links to the CSS file -->
+    <title>Angel Daires - Home</title>
+    <!-- Google Fonts: Quicksand for body, Pacifico for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Main CSS -->
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- =============================
+         Navigation Bar
+    ============================= -->
     <nav class="navbar">
-        <div class="logo">Angel Inc</div>
+        <div class="logo">
+            <span class="logo-text">Angel Daires</span>
+        </div>
         <div class="nav-toggle" onclick="toggleMenu()">☰</div> <!-- Hamburger menu for mobile -->
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="team.html">Team</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
         </ul>
     </nav>
 
-    <!-- Main Content -->
-    <section class="hero">
-        <h1>Welcome to Angel Inc</h1>
-        <p>We’re a food distribution company dedicated to serving our community with care and quality.</p>
-        <a href="products.html" class="btn">Explore Our Products</a>
-    </section>
+    <!-- =============================
+         Banner Section
+         Contains main hero content centered on banner image
+    ============================= -->
+    <div class="banner banner-with-content">
+        <img src="angel-logo.png" alt="Angel Daires Banner" class="banner-img" />
+        <div class="hero hero-on-banner">
+            <h1>Welcome to Angel Daires</h1>
+            <p>We’re a food distribution company dedicated to serving our community with care and quality.</p>
+            <a href="products.html" class="btn">Explore Our Products</a>
+        </div>
+    </div>
 
-    <!-- About Section -->
+    <!-- =============================
+         About Section
+    ============================= -->
     <section class="about">
         <h2>About Us</h2>
-        <p>Angel Inc is a leading food distribution company established with a mission to provide high-quality food products to our community. With years of experience in the industry, we pride ourselves on our commitment to excellence, reliability, and customer satisfaction. Our team works tirelessly to ensure that every product we distribute meets the highest standards of quality and freshness.</p>
+        <p>Angel Daires is a leading food distribution company established with a mission to provide high-quality food products to our community. With years of experience in the industry, we pride ourselves on our commitment to excellence, reliability, and customer satisfaction. Our team works tirelessly to ensure that every product we distribute meets the highest standards of quality and freshness.</p>
     </section>
 
-    <!-- Services Section -->
+    <!-- =============================
+         Services Section
+    ============================= -->
     <section class="services">
         <h2>Our Services</h2>
-        <p>We offer a comprehensive range of food distribution services tailored to meet the needs of our clients. From sourcing premium ingredients to delivering them directly to your doorstep, Angel Inc handles every step of the process with care and precision. Our services include wholesale distribution, custom order fulfillment, and timely delivery solutions for businesses and individuals alike.</p>
+        <p>We offer a comprehensive range of food distribution services tailored to meet the needs of our clients. From sourcing premium ingredients to delivering them directly to your doorstep, Angel Daires handles every step of the process with care and precision. Our services include wholesale distribution, custom order fulfillment, and timely delivery solutions for businesses and individuals alike.</p>
     </section>
 
-    <!-- Footer -->
+    <!-- =============================
+         Footer
+    ============================= -->
     <footer>
-        <p>© 2025 Angel Inc. All rights reserved.</p>
+        <p>© 2025 Angel Daires. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script> <!-- Links to the JavaScript file -->
+    <!-- =============================
+         JavaScript
+    ============================= -->
+    <script src="script.js"></script> <!-- Main JS -->
 </body>
 </html>

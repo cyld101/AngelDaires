@@ -1,46 +1,71 @@
+
+<!--
+====================================================
+ Angel Daires - Team Page
+ Organized & Notated HTML
+====================================================
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angel Inc - Team</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Angel Daires - Team</title>
+    <!-- Google Fonts: Quicksand for body, Pacifico for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Main CSS -->
 </head>
 <body>
-    <!-- Navigation Bar (same as index.html) -->
+    <!-- =============================
+         Navigation Bar
+    ============================= -->
     <nav class="navbar">
-        <div class="logo">Angel Inc</div>
+        <div class="logo">
+            <span class="logo-text">Angel Daires</span>
+        </div>
         <div class="nav-toggle" onclick="toggleMenu()">☰</div>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="team.html">Team</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
         </ul>
     </nav>
 
-    <!-- Team Section -->
+    <!-- =============================
+         Team Section
+    ============================= -->
     <section class="content">
         <h1>Meet Our Team</h1>
         <div class="team-list">
+            <!-- Team Member 1 -->
             <div class="team-member">
                 <h3>Darrick Angel</h3>
                 <p>Founder/President</p>
             </div>
+            <!-- Team Member 2 -->
             <div class="team-member">
                 <h3>Selina Angel</h3>
-                <p>CEO/Pain in the butt</p>
+                <p>Operations</p>
             </div>
+            <!-- Team Member 3 -->
             <div class="team-member">
                 <h3>Emily Brown</h3>
-                <p>Round up school route</p>
+                <p>HR</p>
             </div>
         </div>
     </section>
 
+    <!-- =============================
+         Footer
+    ============================= -->
     <footer>
-        <p>&copy; 2025 Angel Inc. All rights reserved.</p>
+        <p>© 2025 Angel Daires. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- =============================
+         JavaScript
+    ============================= -->
+    <script src="script.js"></script> <!-- Main JS -->
 </body>
 </html>
