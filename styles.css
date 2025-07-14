@@ -317,6 +317,32 @@ footer {
 }
 
 /* =============================
+   Persistent Phone Button Styling
+============================= */
+.phone-btn {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background: #e74c3c;
+    color: white;
+    font-size: 1.15rem;
+    font-family: 'Quicksand', Arial, sans-serif;
+    padding: 0.8rem 1.4rem;
+    border-radius: 32px;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.12);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 999;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.phone-btn:hover {
+    background: #c0392b;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+}
+
+/* =============================
    About Section Styling
 ============================= */
 .about {

@@ -1,0 +1,4 @@
+name = "angeldairies" compatibility_date = "2025-07-14"
+
+[assets]
+directory = "." 
