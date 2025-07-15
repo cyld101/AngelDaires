@@ -255,6 +255,30 @@ body {
     background-color: transparent; /* Light gray background */
 }
 
+/* =============================
+   Animated Title (Home Page)
+============================= */
+.animated-title {
+    opacity: 0;
+    transform: translateY(40px) scale(0.96);
+    animation: fadeInUp 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.96);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-8px) scale(1.04);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 /* Use Pacifico for main hero heading */
 .hero h1, .hero-on-banner h1, .about h2, .services h2, .logo-text {
     font-family: 'Pacifico', cursive;
