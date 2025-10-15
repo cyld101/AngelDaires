@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Dairies - Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">Angel Dairies</span>
+        </div>
+        <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li class="nav-dropdown">
+                <a href="products.html">Products</a>
+                <ul class="dropdown-menu">
+                    <li><a href="products.html#meats">Meats</a></li>
+                    <li><a href="products.html#milk">Milk & Dairy</a></li>
+                    <li><a href="products.html#wilcoxons">Wilcoxons</a></li>
+                    <li><a href="products.html#other">Other</a></li>
+                </ul>
+            </li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+    </nav>
+
+    <!-- Persistent Phone Button -->
+    <a href="tel:555-123-4567" class="phone-btn">
+        <span>&#128222;</span> Call Us
+    </a>
+
+    <!-- Main Content -->
+    <section class="content">
+        <h1>Our Services</h1>
+        <p>We offer a range of services to support our customers and community. Explore what Angel Dairies can do for you!</p>
+        <div class="service-list" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
+            <div class="service-card" style="background: #fff; border-radius: 1rem; box-shadow: 0 1px 6px rgba(0,0,0,0.07); padding: 1.2rem 1.5rem; min-width: 180px; max-width: 220px; flex: 1 1 180px; display: flex; flex-direction: column; align-items: flex-start;">
+                <h3>Local Delivery</h3>
+                <p>Fresh products delivered to your door every week. Flexible scheduling and friendly service.</p>
+            </div>
+            <div class="service-card" style="background: #fff; border-radius: 1rem; box-shadow: 0 1px 6px rgba(0,0,0,0.07); padding: 1.2rem 1.5rem; min-width: 180px; max-width: 220px; flex: 1 1 180px; display: flex; flex-direction: column; align-items: flex-start;">
+                <h3>Wholesale Supply</h3>
+                <p>Bulk orders for restaurants, cafes, and shops. Competitive pricing and reliable sourcing.</p>
+            </div>
+            <div class="service-card" style="background: #fff; border-radius: 1rem; box-shadow: 0 1px 6px rgba(0,0,0,0.07); padding: 1.2rem 1.5rem; min-width: 180px; max-width: 220px; flex: 1 1 180px; display: flex; flex-direction: column; align-items: flex-start;">
+                <h3>Event Catering</h3>
+                <p>Custom menus and catering for local events, parties, and gatherings. Contact us for details!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Angel Dairies. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
