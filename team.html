@@ -1,4 +1,3 @@
-
 <!--
 ====================================================
  Angel Dairies - Team Page
@@ -27,7 +26,21 @@
         <div class="nav-toggle" onclick="toggleMenu()">☰</div>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
+            <li class="nav-dropdown">
+                <a href="products.html">Products ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="products.html#butter-title">Butter & Margarine</a></li>
+                    <li><a href="products.html#cheese-title">Cheese (Shredded & Sliced)</a></li>
+                    <li><a href="products.html#meats-title">Meats</a></li>
+                    <li><a href="products.html#dips-title">Dips & Spreads</a></li>
+                    <li><a href="products.html#drinks-title">Drinks & Juices</a></li>
+                    <li><a href="products.html#chocmilk-title">Chocolate & Flavored Milk</a></li>
+                    <li><a href="products.html#milk-title">Milk & Dairy</a></li>
+                    <li><a href="products.html#icecream-title">Ice Cream & Frozen Treats</a></li>
+                    <li><a href="products.html#wilcoxons-title">Wilcoxons Products</a></li>
+                    <li><a href="products.html#misc-title">Sides</a></li>
+                </ul>
+            </li>
             <li><a href="team.html">Team</a></li>
             <li><a href="recipes.html">Recipes</a></li>
         </ul>
@@ -38,22 +51,59 @@
     ============================= -->
     <section class="content">
         <h1>Meet Our Team</h1>
-        <div class="team-list">
-            <!-- Team Member 1 -->
-            <div class="team-member">
-                <h3>Darrick Angel</h3>
-                <p>Founder/President</p>
-            </div>
-            <!-- Team Member 2 -->
-            <div class="team-member">
-                <h3>Selina Angel</h3>
-                <p>Operations</p>
-            </div>
-            <!-- Team Member 3 -->
-            <div class="team-member">
-                <h3>Emily Brown</h3>
-                <p>HR</p>
-            </div>
+        <div class="team-list redesigned-team-list">
+            <!-- Leadership -->
+            <section class="team-group" aria-labelledby="leadership-title">
+                <h2 class="team-group-title" id="leadership-title">Leadership</h2>
+                <div class="team-group-row">
+                    <article class="team-member-card">
+                        <h3>Darrick Angel</h3>
+                        <p>Founder/President</p>
+                    </article>
+                    <article class="team-member-card">
+                        <h3>Selina Angel</h3>
+                        <p>Office Manager</p>
+                    </article>
+                    <article class="team-member-card">
+                        <h3>Damian C</h3>
+                        <p>Manager</p>
+                    </article>
+                    <article class="team-member-card">
+                        <h3>Jonathon O</h3>
+                        <p>Sales</p>
+                    </article>
+                </div>
+            </section>
+            <!-- Drivers -->
+            <section class="team-group" aria-labelledby="drivers-title">
+                <h2 class="team-group-title" id="drivers-title">Drivers</h2>
+                <div class="team-group-row">
+                    <article class="team-member-card">
+                        <h3>Shannon M</h3>
+                        <p>Driver</p>
+                    </article>
+                    <article class="team-member-card">
+                        <h3>Justin W</h3>
+                        <p>Driver</p>
+                    </article>
+                    <article class="team-member-card">
+                        <h3>Nick O</h3>
+                        <p>Driver</p>
+                    </article>
+                    <article class="team-member-card">
+                        <h3>Eric R</h3>
+                        <p>Driver</p>
+                    </article>
+                    <article class="team-member-card">
+                        <h3>Montana W</h3>
+                        <p>Driver</p>
+                    </article>
+                    <article class="team-member-card">
+                        <h3>Mike G</h3>
+                        <p>Driver</p>
+                    </article>
+                </div>
+            </section>
         </div>
     </section>
 

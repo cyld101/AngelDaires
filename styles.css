@@ -169,14 +169,51 @@ body {
 }
 
 /* =============================
-   Navigation Bar Styling
+   Navigation Bar Styling (Ultra Compact Header)
 ============================= */
 .navbar {
-    background-color: #2c3e50; /* Dark blue background */
-    padding: 1rem;
+    background-color: #2c3e50;
+    padding: 0.1rem 0.4rem;
+    min-height: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo-text {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    margin-left: 0.05rem;
+}
+
+.logo-img {
+    height: 11px;
+}
+
+.nav-links li {
+    margin-left: 0.3rem;
+}
+
+.nav-toggle {
+    font-size: 0.8rem;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 0.05rem 0.1rem;
+        min-height: 18px;
+    }
+    .logo-text {
+        font-size: 0.65rem;
+    }
+    .logo-img {
+        height: 9px;
+    }
+    .nav-links li {
+        margin-left: 0.2rem;
+    }
 }
 
 /* =============================
@@ -203,7 +240,7 @@ body {
    Logo Image Styling
 ============================= */
 .logo-img {
-    height: 40px;
+    height: 20px;
     width: auto;
     margin-right: 0.5rem;
 }
@@ -213,9 +250,10 @@ body {
 ============================= */
 .logo-text {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1 rem;
     font-weight: bold;
     text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    margin-left: 0.2rem;
 }
 
 /* =============================
@@ -227,7 +265,7 @@ body {
 }
 
 .nav-links li {
-    margin-left: 2rem;
+    margin-left: 1.2rem;
 }
 
 .nav-links a {
@@ -242,7 +280,7 @@ body {
 .nav-toggle {
     display: none; /* Hidden by default, shown on mobile */
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
@@ -332,12 +370,23 @@ body {
 ============================= */
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 0.4rem;
     background-color: #2c3e50;
     color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.85rem;
+    /* Reduced padding and font size for a smaller footer */
+    line-height: 1.2; /* Tighter line height */
+    min-height: 22px; /* Minimum height for compactness */
+}
+@media (max-width: 700px) {
+    footer {
+        padding: 0.18rem 0.2rem;
+        font-size: 0.7rem;
+        min-height: 16px;
+    }
 }
 
 /* =============================
@@ -346,7 +395,7 @@ footer {
 .phone-btn {
     position: fixed;
     right: 2rem;
-    bottom: 2rem;
+    bottom: 0.7rem;
     background: #e74c3c;
     color: white;
     font-size: 1.15rem;
@@ -408,6 +457,227 @@ footer {
     font-size: 1.1rem;
     margin-bottom: 2rem; /* Added bottom margin */
 }
+
+/* =============================
+   Redesigned Team Page Styling
+============================= */
+.redesigned-team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 2rem;
+    min-height: 80vh;
+}
+.team-group {
+    background: #f8fafc;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+.team-group-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    color: #2d3a4a;
+    letter-spacing: 1px;
+}
+.team-group-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+}
+.team-member-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    padding: 1.2rem 1.5rem;
+    min-width: 180px;
+    max-width: 220px;
+    flex: 1 1 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: box-shadow 0.2s;
+}
+.team-member-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.team-member-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 0.3rem 0;
+    color: #1a2533;
+}
+.team-member-card p {
+    font-size: 1rem;
+    color: #4a5a6a;
+    margin: 0;
+}
+@media (max-width: 900px) {
+    .team-group-row {
+        gap: 1rem;
+    }
+    .team-member-card {
+        min-width: 140px;
+        max-width: 180px;
+        padding: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    .team-group {
+        padding: 1rem 0.5rem;
+    }
+    .team-group-title {
+        font-size: 1.3rem;
+    }
+    .team-group-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .team-member-card {
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+        align-items: flex-start;
+    }
+}
+
+/* =============================
+   Product Page Layout (Card Style)
+============================= */
+.product-list, .redesigned-product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+.product-group {
+    scroll-margin-top: 32px; /* Increased to ensure anchor target is fully visible below sticky header */
+    background: #f8fafc;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+.product-group-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    color: #2d3a4a;
+    letter-spacing: 1px;
+}
+.product-group-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+}
+.product-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    padding: 1.2rem 1.5rem;
+    min-width: 180px;
+    max-width: 220px;
+    flex: 1 1 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: box-shadow 0.2s;
+}
+.product-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.product-card span {
+    font-size: 1.1rem;
+    color: #1a2533;
+    font-weight: 500;
+}
+@media (max-width: 900px) {
+    .product-group-row {
+        gap: 1rem;
+    }
+    .product-card {
+        min-width: 140px;
+        max-width: 180px;
+        padding: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    .product-group {
+        padding: 1rem 0.5rem;
+    }
+    .product-group-title {
+        font-size: 1.3rem;
+    }
+    .product-group-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .product-card {
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+        align-items: flex-start;
+    }
+}
+/* End Product Page Layout */
+
+/* =============================
+   Dropdown Menu for Products Tab
+============================= */
+.nav-dropdown {
+    position: relative;
+}
+.nav-dropdown > a {
+    cursor: pointer;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #fff;
+    min-width: 220px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    border-radius: 0 0 1rem 1rem;
+    z-index: 100;
+    padding: 0.5rem 0;
+    margin: 0;
+    list-style: none;
+}
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+.dropdown-menu li {
+    width: 100%;
+}
+.dropdown-menu a {
+    display: block;
+    padding: 0.7rem 1.2rem;
+    color: #2d3a4a;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.15s;
+}
+.dropdown-menu a:hover {
+    background: #f0f4fa;
+    color: #1a2533;
+}
+@media (max-width: 700px) {
+    .dropdown-menu {
+        position: static;
+        min-width: unset;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+/* End Dropdown Menu */
 
 /* =============================
    Mobile Responsiveness

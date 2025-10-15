@@ -1,4 +1,3 @@
-
 <!--
 ====================================================
  Angel Dairies - Products Page
@@ -27,7 +26,21 @@
         <div class="nav-toggle" onclick="toggleMenu()">☰</div>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
+            <li class="nav-dropdown">
+                <a href="products.html">Products ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#butter-title">Butter & Margarine</a></li>
+                    <li><a href="#cheese-title">Cheese (Shredded & Sliced)</a></li>
+                    <li><a href="#meats-title">Meats</a></li>
+                    <li><a href="#dips-title">Dips & Spreads</a></li>
+                    <li><a href="#drinks-title">Drinks & Juices</a></li>
+                    <li><a href="#chocmilk-title">Chocolate & Flavored Milk</a></li>
+                    <li><a href="#milk-title">Milk & Dairy</a></li>
+                    <li><a href="#icecream-title">Ice Cream & Frozen Treats</a></li>
+                    <li><a href="#wilcoxons-title">Wilcoxons Products</a></li>
+                    <li><a href="#misc-title">Sides</a></li>
+                </ul>
+            </li>
             <li><a href="team.html">Team</a></li>
             <li><a href="recipes.html">Recipes</a></li>
         </ul>
@@ -38,64 +51,230 @@
     ============================= -->
     <section class="content">
         <h1>Our Products</h1>
-        <div class="product-list">
+        <div class="product-list redesigned-product-list">
+            <!-- Butter & Margarine -->
+            <section class="product-group" aria-labelledby="butter-title">
+                <h2 class="product-group-title" id="butter-title">Butter & Margarine</h2>
+                <div class="product-group-row">
+                    <article class="product-card"><span>Continental Butter Chips Flat 200 count</span></article>
+                    <article class="product-card"><span>Butter Quarters</span></article>
+                    <article class="product-card"><span>Salted Butter Solids 1 lbs</span></article>
+                    <article class="product-card"><span>Unsalted Butter Solids 1 lbs.</span></article>
+                    <article class="product-card"><span>Margarine Soft Tubs 1 lbs - 6 per case</span></article>
+                </div>
+            </section>
+            <!-- Cheese (Shredded & Sliced) -->
+            <section class="product-group" aria-labelledby="cheese-title">
+                <h2 class="product-group-title" id="cheese-title">Cheese (Shredded & Sliced)</h2>
+                <div class="product-group-row">
+                    <article class="product-card"><span>Fancy Shredded Cheddar 5 lb</span></article>
+                    <article class="product-card"><span>Shredded Cheddar Jack 5 lb</span></article>
+                    <article class="product-card"><span>Shredded Cheddar 5 lb</span></article>
+                    <article class="product-card"><span>Shredded Mozzarella 5 lb</span></article>
+                    <article class="product-card"><span>Shredded Parmesan 5 lb</span></article>
+                    <article class="product-card"><span>8oz. Medium Cheddar</span></article>
+                    <article class="product-card"><span>8oz. Mild Cheddar</span></article>
+                    <article class="product-card"><span>8oz. Pepper Jack</span></article>
+                    <article class="product-card"><span>8oz. Sharp Cheddar</span></article>
+                    <article class="product-card"><span>Pizza Cheese Blend 5 lb</span></article>
+                    <article class="product-card"><span>Pepper Deli Horn 6 lb</span></article>
+                    <article class="product-card"><span>6 lb Co-Jack Deli Horn</span></article>
+                    <article class="product-card"><span>8oz. Colby - Jack</span></article>
+                </div>
+            </section>
             <!-- Meats -->
-            <div class="product-group">
-                <h2>Meats</h2>
-                <div class="product"><h3>Bacon Dailies</h3></div>
-                <div class="product"><h3>Beef Hot Dogs</h3></div>
-                <div class="product"><h3>Hamburger Patties 4oz</h3></div>
-                <div class="product"><h3>Hamburger Patties 6oz</h3></div>
-                <div class="product"><h3>Hot Dog Red</h3></div>
-                <div class="product"><h3>Sausage Link Daily</h3></div>
-            </div>
-            <!-- Cheeses -->
-            <div class="product-group">
-                <h2>Cheeses</h2>
-                <div class="product"><h3>Blue Crumble</h3></div>
-                <div class="product"><h3>Cheddar 8oz</h3></div>
-                <div class="product"><h3>Cheddar Deli Horn</h3></div>
-                <div class="product"><h3>American Loaf Yellow</h3></div>
-                <div class="product"><h3>Smoked Gouda</h3></div>
-                <div class="product"><h3>Grated Parmesan</h3></div>
-            </div>
-            <!-- Butters & Creams -->
-            <div class="product-group">
-                <h2>Butters & Creams</h2>
-                <div class="product"><h3>Butter Continental Chips</h3></div>
-                <div class="product"><h3>Butter Quart</h3></div>
-                <div class="product"><h3>Butter Solids 1lbs</h3></div>
-                <div class="product"><h3>Butter Unsalted Solids 1lbs</h3></div>
-                <div class="product"><h3>Heavy Whipping Cream Half Gallon</h3></div>
-            </div>
-            <!-- Other Dairy -->
-            <div class="product-group">
-                <h2>Other Dairy</h2>
-                <div class="product"><h3>Almond Milk Half Gallon</h3></div>
-                <div class="product"><h3>Buttermilk Half Pint</h3></div>
-                <div class="product"><h3>Buttermilk Half Gallon</h3></div>
-                <div class="product"><h3>Buttermilk Quart</h3></div>
-                <div class="product"><h3>Cottage Cheese 16oz</h3></div>
-                <div class="product"><h3>Cottage Cheese 16oz 4%</h3></div>
-                <div class="product"><h3>Cottage Cheese 24oz MG</h3></div>
-                <div class="product"><h3>Cottage Cheese 24oz Viva</h3></div>
-                <div class="product"><h3>Cottage Cheese 5lbs</h3></div>
-            </div>
-            <!-- Chocolate & Milk -->
-            <div class="product-group">
-                <h2>Chocolate & Milk</h2>
-                <div class="product"><h3>Chocolate 1% 14oz ESL</h3></div>
-                <div class="product"><h3>Chocolate Dispenser</h3></div>
-                <div class="product"><h3>1% Dispenser</h3></div>
-                <div class="product"><h3>1% Gallon</h3></div>
-                <div class="product"><h3>1% Half Gallom</h3></div>
-                <div class="product"><h3>1% Half Pint</h3></div>
-            </div>
+            <section class="product-group" aria-labelledby="meats-title">
+                <h2 class="product-group-title" id="meats-title">Meats</h2>
+                <div class="product-group-row">
+                    <article class="product-card"><span>Dailys 1/4 Bacon</span></article>
+                    <article class="product-card"><span>Dailys 12-14 Bacon 15 lbs</span></article>
+                    <article class="product-card"><span>Daily's 14-16 Bacon 15 lbs.</span></article>
+                    <article class="product-card"><span>Beef Hot Dogs 8-1, 10 lbs.</span></article>
+                    <article class="product-card"><span>Hamburger Patties 4oz. 4/1</span></article>
+                    <article class="product-card"><span>Hamburger Patties 6oz. 3/1</span></article>
+                    <article class="product-card"><span>Franks Red 6/1 10 lb hot dogs</span></article>
+                    <article class="product-card"><span>Polish Sausage 4-1</span></article>
+                    <article class="product-card"><span>Pork Loin Boneless per lb</span></article>
+                    <article class="product-card"><span>Sausage Patties 4oz.</span></article>
+                    <article class="product-card"><span>Weiner 4-1</span></article>
+                    <article class="product-card"><span>Weiner 8-1</span></article>
+                    <article class="product-card"><span>Daily's 1oz Sausage Links</span></article>
+                    <article class="product-card"><span>Prime Rib</span></article>
+                </div>
+            </section>
+            <!-- Dips & Spreads -->
+            <section class="product-group" aria-labelledby="dips-title">
+                <h2 class="product-group-title" id="dips-title">Dips & Spreads</h2>
+                <div class="product-group-row">
+                    <article class="product-card"><span>Fiesta Dip 12oz.</span></article>
+                    <article class="product-card"><span>Fr. Onion Dip 12oz.</span></article>
+                    <article class="product-card"><span>GR Chili Dip 12oz.</span></article>
+                    <article class="product-card"><span>Cream Cheese 3 lb</span></article>
+                    <article class="product-card"><span>100/1 Cream Cheese Portions</span></article>
+                </div>
+            </section>
+            <!-- Drinks & Juices -->
+            <section class="product-group" aria-labelledby="drinks-title">
+                <h2 class="product-group-title" id="drinks-title">Drinks & Juices</h2>
+                <div class="product-group-row">
+                    <article class="product-card"><span>Naked Juice, Blue Machine</span></article>
+                    <article class="product-card"><span>Naked Juice, Berry Blast</span></article>
+                    <article class="product-card"><span>Naked Juice, Green Machine</span></article>
+                    <article class="product-card"><span>Naked Juice, Mighty Mango</span></article>
+                    <article class="product-card"><span>Naked Juice, Red Machine</span></article>
+                    <article class="product-card"><span>Naked Juice, Strawberry Banana</span></article>
+                    <article class="product-card"><span>Orange Juice Half Gallon</span></article>
+                    <article class="product-card"><span>Orange Juice Pint</span></article>
+                    <article class="product-card"><span>Orange Juice Quart</span></article>
+                    <article class="product-card"><span>Eggnog Half Gallon</span></article>
+                    <article class="product-card"><span>Eggnog Quart</span></article>
+                    <article class="product-card"><span>Reddi Whipping Cream 13 oz</span></article>
+                </div>
+            </section>
+            <!-- Chocolate & Flavored Milk -->
+            <section class="product-group" aria-labelledby="chocmilk-title">
+                <h2 class="product-group-title" id="chocmilk-title">Chocolate & Flavored Milk</h2>
+                <div class="product-group-row">
+                    <article class="product-card"><span>Chocolate 1% 14oz. ESL</span></article>
+                    <article class="product-card"><span>Chocolate Dispenser</span></article>
+                    <article class="product-card"><span>Chocolate Gallon TruMoo Whole</span></article>
+                    <article class="product-card"><span>Chocolate Half Gallon TruMoo</span></article>
+                    <article class="product-card"><span>Chocolate Half Pint</span></article>
+                    <article class="product-card"><span>Chocolate Quart</span></article>
+                    <article class="product-card"><span>Chocolate Whole 14oz. ESL</span></article>
+                    <article class="product-card"><span>TruMoo Whole Strawberry ESL</span></article>
+                    <article class="product-card"><span>Strawberry 14oz. ESL</span></article>
+                </div>
+            </section>
+            <!-- Milk & Dairy -->
+            <section class="product-group" aria-labelledby="milk-title">
+                <h2 class="product-group-title" id="milk-title">Milk & Dairy</h2>
+                <div class="product-group-row">
+                    <article class="product-card"><span>1% Gallon</span></article>
+                    <article class="product-card"><span>1% Half Gallon</span></article>
+                    <article class="product-card"><span>1% Half Pint</span></article>
+                    <article class="product-card"><span>2% Dispenser - 5 Gallons</span></article>
+                    <article class="product-card"><span>2% Gallon</span></article>
+                    <article class="product-card"><span>2% Half Gallon</span></article>
+                    <article class="product-card"><span>2% Half Pint</span></article>
+                    <article class="product-card"><span>2% Quart</span></article>
+                    <article class="product-card"><span>2% 14oz. ESL</span></article>
+                    <article class="product-card"><span>Almond Milk Half Gallon</span></article>
+                    <article class="product-card"><span>Buttermilk Half Gallon</span></article>
+                    <article class="product-card"><span>Buttermilk Quart</span></article>
+                    <article class="product-card"><span>Cottage Cheese 2% 16oz.</span></article>
+                    <article class="product-card"><span>Cottage Cheese 4% 16oz.</span></article>
+                    <article class="product-card"><span>Cottage Cheese 24oz.</span></article>
+                    <article class="product-card"><span>Cottage Cheese Viva 24oz.</span></article>
+                    <article class="product-card"><span>3 lb Cottage Cheese</span></article>
+                    <article class="product-card"><span>5 lb Cottage Cheese - 4%</span></article>
+                    <article class="product-card"><span>Blue Cheese Crumbled 5 lbs</span></article>
+                    <article class="product-card"><span>Cheddar 8oz.</span></article>
+                    <article class="product-card"><span>6 lb Cheddar Deli Horn</span></article>
+                    <article class="product-card"><span>Smoked Gouda Roll 6 lb</span></article>
+                    <article class="product-card"><span>Grated Parmesan 5 lb</span></article>
+                    <article class="product-card"><span>H&H (Half & Half) Half Gallon</span></article>
+                    <article class="product-card"><span>Half & Half Pint</span></article>
+                    <article class="product-card"><span>Half & Half Quart</span></article>
+                    <article class="product-card"><span>Lactose 2% Half Gallon</span></article>
+                    <article class="product-card"><span>Lactose Homo Half Gallon WLC</span></article>
+                    <article class="product-card"><span>Sour Cream 16oz.</span></article>
+                    <article class="product-card"><span>Sour Cream 24oz.</span></article>
+                    <article class="product-card"><span>3 lb Sour Cream</span></article>
+                    <article class="product-card"><span>5 lb Sour Cream</span></article>
+                    <article class="product-card"><span>Sour Cream 8oz.</span></article>
+                    <article class="product-card"><span>Sliced American 12oz.</span></article>
+                    <article class="product-card"><span>Sliced American 5 lb - 120 count</span></article>
+                    <article class="product-card"><span>Sliced Cheddar 1.5 lb</span></article>
+                    <article class="product-card"><span>Sliced Colby Jack 1.5 lb</span></article>
+                    <article class="product-card"><span>Sliced Pepper Jack 1.5 lb</span></article>
+                    <article class="product-card"><span>Sliced Swiss 5 lb - 120 Count</span></article>
+                    <article class="product-card"><span>Sliced Swiss Natural 1.5 lb</span></article>
+                    <article class="product-card"><span>Cheddar String Cheese 24 count</span></article>
+                    <article class="product-card"><span>Marble Jack String Cheese 24 count</span></article>
+                    <article class="product-card"><span>Pepper Jack String Cheese 24 count</span></article>
+                    <article class="product-card"><span>Original String Cheese 24 count</span></article>
+                    <article class="product-card"><span>Natural Swiss Cheese</span></article>
+                </div>
+            </section>
+            <!-- Ice Cream & Frozen Treats -->
+            <section class="product-group" aria-labelledby="icecream-title">
+                <h2 class="product-group-title" id="icecream-title">Ice Cream & Frozen Treats</h2>
+                <div class="product-group-row">
+                    <article class="product-card"><span>B&J American Dream Pint</span></article>
+                    <article class="product-card"><span>B&J Cherry Garcia Pint</span></article>
+                    <article class="product-card"><span>B&J Chocolate Chip Cookie Dough Pint</span></article>
+                    <article class="product-card"><span>B&J Chocolate Fudge Brownie Pint</span></article>
+                    <article class="product-card"><span>B&J Chocolate Therapy Pint</span></article>
+                    <article class="product-card"><span>B&J Chunky Monkey Pint</span></article>
+                    <article class="product-card"><span>B&J Heath Coffee Crunch Pint</span></article>
+                    <article class="product-card"><span>B&J Everything Pint</span></article>
+                    <article class="product-card"><span>B&J Half Baked Pint</span></article>
+                    <article class="product-card"><span>B&J Phish Food Pint</span></article>
+                    <article class="product-card"><span>B&J Peanut Butter Cup Pint</span></article>
+                    <article class="product-card"><span>B&J Strawberry Cheesecake Pint</span></article>
+                    <article class="product-card"><span>B&J Tonite Dough Pint</span></article>
+                    <article class="product-card"><span>B&J Vanilla Health Crunch Pint</span></article>
+                    <article class="product-card"><span>Breyers Heath Toffee Pint</span></article>
+                    <article class="product-card"><span>Breyers Chocolate Pint</span></article>
+                    <article class="product-card"><span>Breyers Oreo Cookie Pint</span></article>
+                    <article class="product-card"><span>Breyers Reese's Peanut Butter Cup Pint</span></article>
+                    <article class="product-card"><span>Breyers Vanilla Pint</span></article>
+                    <article class="product-card"><span>Magnum Almond Ice Cream Bar 3.3oz. 12 pack</span></article>
+                    <article class="product-card"><span>Magnum Double Caramel Ice Cream Bar 12 pack</span></article>
+                    <article class="product-card"><span>Mrs Fields Ice Cream Sandwich 12 pack</span></article>
+                    <article class="product-card"><span>Dove Vanilla/Chocolate 24 pack or 12 pack</span></article>
+                    <article class="product-card"><span>Klondike Vanilla Original Bar 24 pack</span></article>
+                    <article class="product-card"><span>Reese Peanut Butter Cup Ice Cream 24 Pack</span></article>
+                    <article class="product-card"><span>Snicker King Ice Cream Bar 24 pack</span></article>
+                    <article class="product-card"><span>GH Giant Sandwich 24 pack</span></article>
+                    <article class="product-card"><span>GH Giant King Cone 12 Pack</span></article>
+                    <article class="product-card"><span>GH King Cone 24 pack</span></article>
+                    <article class="product-card"><span>GH Oreo Bar 24 pack</span></article>
+                    <article class="product-card"><span>GH Strawberry Shortcake</span></article>
+                    <article class="product-card"><span>Oreo Cones Cookie Ice Cream</span></article>
+                    <article class="product-card"><span>3 Gallon Strawberry Ice Cream</span></article>
+                    <article class="product-card"><span>3 Gallon Vanilla Ice Cream</span></article>
+                </div>
+            </section>
+            <!-- Wilcoxons Products -->
+            <section class="product-group" aria-labelledby="wilcoxons-title">
+                <h2 class="product-group-title" id="wilcoxons-title">Wilcoxons Products</h2>
+                <div class="product-group-row">
+                    <article class="product-card"><span>Wilcoxon Baby Cone 100 count</span></article>
+                    <article class="product-card"><span>Wilcoxon Baby Cones Case - 1,000 Count</span></article>
+                    <article class="product-card"><span>Wilcoxon Regular Cones Case - 1,000 Count</span></article>
+                    <article class="product-card"><span>Wilcoxon 3 Gallon Huckleberry Ice Cream</span></article>
+                    <article class="product-card"><span>Wilcoxon 3 Gallon Ice Cream</span></article>
+                    <article class="product-card"><span>Wilcoxon Fudge Bars</span></article>
+                    <article class="product-card"><span>Wilcoxon Half Gallon Flavors</span></article>
+                    <article class="product-card"><span>Wilcoxon Moose Track Half Gallon</span></article>
+                    <article class="product-card"><span>Wilcoxon Vanilla Half Gallon</span></article>
+                    <article class="product-card"><span>Wilcoxon Ice Cream Bars</span></article>
+                    <article class="product-card"><span>Wilcoxon Lowfat 5 Quart Ice Cream</span></article>
+                    <article class="product-card"><span>Wilcoxon Malt Cup</span></article>
+                    <article class="product-card"><span>Wilcoxon Ice Cream Sandwich</span></article>
+                    <article class="product-card"><span>Wilcoxon Sherbert Quart</span></article>
+                    <article class="product-card"><span>Wilcoxon Ice Soft Serve Gallon - 9% Mix</span></article>
+                    <article class="product-card"><span>Wilcoxon Twist Cups 6oz.</span></article>
+                    <article class="product-card"><span>Wilcoxon Frozen Yogurt Quart</span></article>
+                </div>
+            </section>
             <!-- Sides -->
-            <div class="product-group">
-                <h2>Sides</h2>
-                <div class="product"><h3>Hash Browns</h3></div>
-            </div>
+            <section class="product-group" aria-labelledby="misc-title">
+                <h2 class="product-group-title" id="misc-title">Sides</h2>
+                <div class="product-group-row">
+                    <article class="product-card"><span>Curly Fries 30 lb</span></article>
+                    <article class="product-card"><span>3/8 Regular Fry 30 lb</span></article>
+                    <article class="product-card"><span>Tater Tots 8 lb Bag</span></article>
+                    <article class="product-card"><span>Hash Browns 18 lb</span></article>
+                    <article class="product-card"><span>Onion Ring Beer Batter 2 lb, 5 pack</span></article>
+                    <article class="product-card"><span>MG Jugs 48 Count</span></article>
+                    <article class="product-card"><span>MG Lids 1000 Count</span></article>
+                    <article class="product-card"><span>Vanilla Soft Serve Gallon - 15% Mix</span></article>
+                    <article class="product-card"><span>Vanilla Soft Serve Gallon</span></article>
+                </div>
+            </section>
         </div>
     </section>
 
@@ -117,5 +296,307 @@
          JavaScript
     ============================= -->
     <script src="script.js"></script> <!-- Main JS -->
+    <script>
+    // Mobile/touch support for dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+        var navDropdown = document.querySelector('.nav-dropdown > a');
+        var dropdownMenu = document.querySelector('.nav-dropdown .dropdown-menu');
+        if(navDropdown && dropdownMenu) {
+            navDropdown.addEventListener('click', function(e) {
+                if(window.innerWidth < 800) {
+                    e.preventDefault();
+                    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+                }
+            });
+        }
+    });
+    </script>
 </body>
 </html>
+
+
+
+
+
+
+<!--  **Angel Dairies Product List**
+
+---
+
+### Milk & Dairy
+- 1% Gallon
+- 1% Half Gallon
+- 1% Half Pint
+- 2% Dispenser - 5 Gallons
+- 2% Gallon
+- 2% Half Gallon
+- 2% Half Pint
+- 2% Quart
+- 2% 14oz. ESL
+- Almond Milk Half Gallon
+- Buttermilk Half Gallon
+- Buttermilk Quart
+- Cottage Cheese 2% 16oz.
+- Cottage Cheese 4% 16oz.
+- Cottage Cheese 24oz.
+- Cottage Cheese Viva 24oz.
+- 3 lb Cottage Cheese
+- 5 lb Cottage Cheese - 4%
+- Blue Cheese Crumbled 5 lbs
+- Cheddar 8oz.
+- 6 lb Cheddar Deli Horn
+- Smoked Gouda Roll 6 lb
+- Grated Parmesan 5 lb
+- H&H (Half & Half) Half Gallon
+- Half & Half Pint
+- Half & Half Quart
+- Lactose 2% Half Gallon
+- Lactose Homo Half Gallon WLC
+- Sour Cream 16oz.
+- Sour Cream 24oz.
+- 3 lb Sour Cream
+- 5 lb Sour Cream
+- Sour Cream 8oz.
+- Sliced American 12oz.
+- Sliced American 5 lb - 120 count
+- Sliced Cheddar 1.5 lb
+- Sliced Colby Jack 1.5 lb
+- Sliced Pepper Jack 1.5 lb
+- Sliced Swiss 5 lb - 120 Count
+- Sliced Swiss Natural 1.5 lb
+- Cheddar String Cheese 24 count
+- Marble Jack String Cheese 24 count
+- Pepper Jack String Cheese 24 count
+- Original String Cheese 24 count
+- Natural Swiss Cheese
+
+---
+
+### Butter & Margarine
+- Continental Butter Chips Flat 200 count
+- Butter Quarters
+- Salted Butter Solids 1 lbs
+- Unsalted Butter Solids 1 lbs.
+- Margarine Soft Tubs 1 lbs - 6 per case
+
+---
+
+### Ice Cream & Frozen Treats
+- B&J American Dream Pint
+- B&J Cherry Garcia Pint
+- B&J Chocolate Chip Cookie Dough Pint
+- B&J Chocolate Fudge Brownie Pint
+- B&J Chocolate Therapy Pint
+- B&J Chunky Monkey Pint
+- B&J Heath Coffee Crunch Pint
+- B&J Everything Pint
+- B&J Half Baked Pint
+- B&J Phish Food Pint
+- B&J Peanut Butter Cup Pint
+- B&J Strawberry Cheesecake Pint
+- B&J Tonite Dough Pint
+- B&J Vanilla Health Crunch Pint
+- Breyers Heath Toffee Pint
+- Breyers Chocolate Pint
+- Breyers Oreo Cookie Pint
+- Breyers Reese's Peanut Butter Cup Pint
+- Breyers Vanilla Pint
+- Wilcoxon Baby Cone 100 count
+- Wilcoxon Baby Cones Case - 1,000 Count
+- Wilcoxon Regular Cones Case - 1,000 Count
+- Wilcoxon 3 Gallon Huckleberry Ice Cream
+- Wilcoxon 3 Gallon Ice Cream
+- Wilcoxon Fudge Bars
+- Wilcoxon Half Gallon Flavors
+- Wilcoxon Moose Track Half Gallon
+- Wilcoxon Vanilla Half Gallon
+- Wilcoxon Ice Cream Bars
+- Wilcoxon Lowfat 5 Quart Ice Cream
+- Wilcoxon Malt Cup
+- Wilcoxon Nutty Royale
+- Wilcoxon Premium 5 Quart
+- Wilcoxon Premium Pint
+- Wilcoxon Ice Cream Quart
+- Wilcoxon Ice Cream Sandwich
+- Wilcoxon Sherbert Quart
+- Wilcoxon Ice Soft Serve Gallon - 9% Mix
+- Wilcoxon Twist Cups 6oz.
+- Wilcoxon Frozen Yogurt Quart
+- Magnum Almond Ice Cream Bar 3.3oz. 12 pack
+- Magnum Double Caramel Ice Cream Bar 12 pack
+- Mrs Fields Ice Cream Sandwich 12 pack
+- Dove Vanilla/Chocolate 24 pack or 12 pack
+- Klondike Vanilla Original Bar 24 pack
+- Reese Peanut Butter Cup Ice Cream 24 Pack
+- Snicker King Ice Cream Bar 24 pack
+- GH Giant Sandwich 24 pack
+- GH Giant King Cone 12 Pack
+- GH King Cone 24 pack
+- GH Oreo Bar 24 pack
+- GH Strawberry Shortcake
+- Oreo Cones Cookie Ice Cream
+- 3 Gallon Strawberry Ice Cream
+- 3 Gallon Vanilla Ice Cream
+
+---
+
+### Cheese (Shredded & Sliced)
+- Fancy Shredded Cheddar 5 lb
+- Shredded Cheddar Jack 5 lb
+- Shredded Cheddar 5 lb
+- Shredded Mozzarella 5 lb
+- Shredded Parmesan 5 lb
+- 8oz. Medium Cheddar
+- 8oz. Mild Cheddar
+- 8oz. Pepper Jack
+- 8oz. Sharp Cheddar
+- Pizza Cheese Blend 5 lb
+- Pepper Deli Horn 6 lb
+- 6 lb Co-Jack Deli Horn
+- 8oz. Colby - Jack
+
+---
+
+### Meats
+- Dailys 1/4 Bacon
+- Dailys 12-14 Bacon 15 lbs
+- Daily's 14-16 Bacon 15 lbs.
+- Beef Hot Dogs 8-1, 10 lbs.
+- Hamburger Patties 4oz. 4/1
+- Hamburger Patties 6oz. 3/1
+- Franks Red 6/1 10 lb hot dogs
+- Polish Sausage 4-1
+- Pork Loin Boneless per lb
+- Sausage Patties 4oz.
+- Weiner 4-1
+- Weiner 8-1
+- Daily's 1oz Sausage Links
+- Prime Rib
+
+---
+
+### Dips & Spreads
+- Fiesta Dip 12oz.
+- Fr. Onion Dip 12oz.
+- GR Chili Dip 12oz.
+- Cream Cheese 3 lb
+- 100/1 Cream Cheese Portions
+
+---
+
+### Drinks & Juices
+- Naked
+- Fiesta Dip 12oz.
+- Fr. Onion Dip 12oz.
+- GR Chili Dip 12oz.
+- Cream Cheese 3 lb
+- 100/1 Cream Cheese Portions
+
+---
+
+### Drinks & Juices
+- Naked Juice, Blue Machine
+- Naked Juice, Berry Blast
+- Naked Juice, Green Machine
+- Naked Juice, Mighty Mango
+- Naked Juice, Red Machine
+- Naked Juice, Strawberry Banana
+- Orange Juice Half Gallon
+- Orange Juice Pint
+- Orange Juice Quart
+- Eggnog Half Gallon
+- Eggnog Quart
+- Reddi Whipping Cream 13 oz
+
+---
+
+### Chocolate & Flavored Milk
+- Chocolate 1% 14oz. ESL
+- Chocolate Dispenser
+- Chocolate Gallon TruMoo Whole
+- Chocolate Half Gallon TruMoo
+- Chocolate Half Pint
+- Chocolate Quart
+- Chocolate Whole 14oz. ESL
+- TruMoo Whole Strawberry ESL
+- Strawberry 14oz. ESL
+
+---
+
+### Ice Cream & Frozen Treats
+- B&J American Dream Pint
+- B&J Cherry Garcia Pint
+- B&J Chocolate Chip Cookie Dough Pint
+- B&J Chocolate Fudge Brownie Pint
+- B&J Chocolate Therapy Pint
+- B&J Chunky Monkey Pint
+- B&J Heath Coffee Crunch Pint
+- B&J Everything Pint
+- B&J Half Baked Pint
+- B&J Phish Food Pint
+- B&J Peanut Butter Cup Pint
+- B&J Strawberry Cheesecake Pint
+- B&J Tonite Dough Pint
+- B&J Vanilla Health Crunch Pint
+- Breyers Heath Toffee Pint
+- Breyers Chocolate Pint
+- Breyers Oreo Cookie Pint
+- Breyers Reese's Peanut Butter Cup Pint
+- Breyers Vanilla Pint
+- Wilcoxon Baby Cone 100 count
+- Wilcoxon Baby Cones Case - 1,000 Count
+- Wilcoxon Regular Cones Case - 1,000 Count
+- Wilcoxon 3 Gallon Huckleberry Ice Cream
+- Wilcoxon 3 Gallon Ice Cream
+- Wilcoxon Fudge Bars
+- Wilcoxon Half Gallon Flavors
+- Wilcoxon Moose Track Half Gallon
+- Wilcoxon Vanilla Half Gallon
+- Wilcoxon Ice Cream Bars
+- Wilcoxon Lowfat 5 Quart Ice Cream
+- Wilcoxon Malt Cup
+- Wilcoxon Nutty Royale
+- Wilcoxon Premium 5 Quart
+- Wilcoxon Premium Pint
+- Wilcoxon Ice Cream Quart
+- Wilcoxon Ice Cream Sandwich
+- Wilcoxon Sherbert Quart
+- Wilcoxon Ice Soft Serve Gallon - 9% Mix
+- Wilcoxon Twist Cups 6oz.
+- Wilcoxon Frozen Yogurt Quart
+- Magnum Almond Ice Cream Bar 3.3oz. 12 pack
+- Magnum Double Caramel Ice Cream Bar 12 pack
+- Mrs Fields Ice Cream Sandwich 12 pack
+- Dove Vanilla/Chocolate 24 pack or 12 pack
+- Klondike Vanilla Original Bar 24 pack
+- Reese Peanut Butter Cup Ice Cream 24 Pack
+- Snicker King Ice Cream Bar 24 pack
+- GH Giant Sandwich 24 pack
+- GH Giant King Cone 12 Pack
+- GH King Cone 24 pack
+- GH Oreo Bar 24 pack
+- GH Strawberry Shortcake
+- Oreo Cones Cookie Ice Cream
+- 3 Gallon Strawberry Ice Cream
+- 3 Gallon Vanilla Ice Cream
+
+---
+
+### Wilcoxons Products
+- Wilcoxon Baby Cone 100 count
+- Wilcoxon Baby Cones Case - 1,000 Count
+- Wilcoxon Regular Cones Case - 1,000 Count
+- Wilcoxon 3 Gallon Huckleberry Ice Cream
+- Wilcoxon 3 Gallon Ice Cream
+- Wilcoxon Fudge Bars
+- Wilcoxon Half Gallon Flavors
+- Wilcoxon Moose Track Half Gallon
+- Wilcoxon Vanilla Half Gallon
+- Wilcoxon Ice Cream Bars
+- Wilcoxon Lowfat 5 Quart Ice Cream
+- Wilcoxon Malt Cup
+- Wilcoxon Ice Cream Sandwich
+- Wilcoxon Sherbert Quart
+- Wilcoxon Ice Soft Serve Gallon - 9% Mix
+- Wilcoxon Twist Cups 6oz.
+- Wilcoxon Frozen Yogurt Quart
