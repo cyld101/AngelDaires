@@ -18,7 +18,15 @@ document.querySelectorAll('.dropdown-menu a').forEach(link => {
         const href = this.getAttribute('href');
         if (href && href.startsWith('#')) {
             e.preventDefault();
-            scrollWithOffset(href, 100); // 32px = header height
+            // Hide dropdown menu immediately (for mobile)
+            var dropdownMenu = document.querySelector('.nav-dropdown .dropdown-menu');
+            if (dropdownMenu && window.innerWidth < 800) {
+                dropdownMenu.style.display = 'none';
+            }
+            // Wait longer for reflow/layout before scrolling
+            setTimeout(function() {
+                scrollWithOffset(href, 100); // 32px = header height
+            }, 100);
             // Close mobile nav menu if open
             const navLinks = document.getElementById("navLinks");
             if (navLinks && navLinks.classList.contains("active")) {
@@ -26,4 +34,13 @@ document.querySelectorAll('.dropdown-menu a').forEach(link => {
             }
         }
     });
+});
+
+// On page load, scroll to anchor with offset if hash is present
+window.addEventListener('DOMContentLoaded', function() {
+    if (window.location.hash) {
+        setTimeout(function() {
+            scrollWithOffset(window.location.hash, 100); // 100px = header height
+        }, 100);
+    }
 });
