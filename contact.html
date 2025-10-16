@@ -1,0 +1,152 @@
+<!--
+====================================================
+ Angel Dairies - Contact Page
+====================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Dairies - Contact</title>
+    <!-- Favicon and fonts -->
+    <link rel="icon" type="image/png" href="angel-inc-logo.png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Contact Angel Dairies — place an order, ask about services, or get in touch with our team.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation (keeps structure consistent with other pages) -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="logo">
+            <span class="logo-text">Angel Dairies</span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li class="nav-dropdown">
+                <a href="products.html" aria-haspopup="true" aria-expanded="false">Products ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="products.html#butter-title">Butter & Margarine</a></li>
+                    <li><a href="products.html#cheese-title">Cheese</a></li>
+                    <li><a href="products.html#meats-title">Meats</a></li>
+                    <li><a href="products.html#dips-title">Dips & Spreads</a></li>
+                    <li><a href="products.html#drinks-title">Drinks & Juices</a></li>
+                    <li><a href="products.html#chocmilk-title">Flavored Milk</a></li>
+                    <li><a href="products.html#milk-title">Milk & Dairy</a></li>
+                    <li><a href="products.html#icecream-title">Ice Cream</a></li>
+                    <li><a href="products.html#wilcoxons-title">Wilcoxons Products</a></li>
+                    <li><a href="products.html#misc-title">Sides</a></li>
+                </ul>
+            </li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page content -->
+    <main class="content" role="main">
+        <h1>Contact Us</h1>
+        <p style="max-width:800px;margin:0 auto 1rem;">Have a question, want to place an order, or need help with a custom request? Use the form below or call us directly. We aim to respond within one business day.</p>
+
+        <div class="product-group" style="max-width:980px;margin:1.5rem auto;padding:1.25rem;">
+            <div style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+                <!-- Contact form -->
+                <form id="contactForm" style="flex:1 1 420px;min-width:280px;" action="#" method="post" aria-label="Contact form">
+                    <div style="display:flex;flex-direction:column;gap:0.6rem;margin-bottom:0.6rem;">
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" type="text" required placeholder="Jane Doe" />
+                    </div>
+
+                    <div style="display:flex;flex-direction:column;gap:0.6rem;margin-bottom:0.6rem;">
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" required placeholder="name@example.com" />
+                    </div>
+
+                    <div style="display:flex;flex-direction:column;gap:0.6rem;margin-bottom:0.6rem;">
+                        <label for="phone">Phone (optional)</label>
+                        <input id="phone" name="phone" type="tel" placeholder="(406) 555-1234" pattern="[0-9 ()+-]{7,20}" />
+                    </div>
+
+                    <!-- simple honeypot to reduce spam -->
+                    <div style="position:absolute;left:-9999px;overflow:hidden;" aria-hidden="true">
+                        <label>Leave this field blank</label>
+                        <input name="address" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div style="display:flex;flex-direction:column;gap:0.6rem;margin-bottom:0.8rem;">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="How can we help?"></textarea>
+                    </div>
+
+                    <div style="display:flex;gap:0.6rem;align-items:center;">
+                        <button type="submit" class="btn">Send message</button>
+                        <div id="formStatus" aria-live="polite" style="color:#2d3a4a;font-size:0.95rem;"></div>
+                    </div>
+
+                    <p style="margin-top:0.75rem;font-size:0.95rem;color:#4a5a6a;">Note: This site does not currently have a server-side mail endpoint. The form validates locally and simulates sending — replace the form action with your endpoint or services like Formspree, Netlify Forms, etc.</p>
+                </form>
+
+                <!-- Contact details / quick actions -->
+                <aside style="flex:0 1 320px;min-width:260px;">
+                    <div style="margin-bottom:1rem;">
+                        <h3 style="margin:0 0 0.5rem 0;">Get In Touch!</h3>
+                        <p style="margin:0 0 0.5rem 0;">Phone: <a href="tel:+14066718498">(406) 671-8498</a></p>
+                        <p style="margin:0 0 0.5rem 0;">Email: office@angeldairies.com</p>
+                        <p style="margin:0 0 0.5rem 0;">Hours: Mon–Fri 8:00am–5:00pm</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Angel Dairies. All rights reserved.</p>
+    </footer>
+
+    <!-- Persistent Phone Button -->
+    <a href="tel:+14066718498" class="phone-btn" id="phoneBtn" role="button" aria-label="Call Angel Dairies at 406 671 8498">
+        <span aria-hidden="true">📞</span>
+        <span class="sr-only">(406) 671-8498</span>
+    </a>
+
+    <script>
+    // small client-side validation + simulation of send
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var form = e.target;
+        var status = document.getElementById('formStatus');
+        // simple honeypot check
+        if(form.address && form.address.value) {
+            status.textContent = 'Spam detected.';
+            return;
+        }
+        // basic validation
+        if(!form.name.value.trim() || !form.email.value.trim() || !form.message.value.trim()) {
+            status.textContent = 'Please complete required fields.';
+            return;
+        }
+        // simulate send
+        status.textContent = 'Sending...';
+        setTimeout(function(){
+            status.textContent = 'Thanks — we received your message. We will be in touch soon.';
+            form.reset();
+        }, 900);
+    });
+
+    // keep nav toggle aria in sync (fallback if toggleMenu not defined elsewhere)
+    var navToggle = document.getElementById('navToggle');
+    var navLinks = document.getElementById('navLinks');
+    if(navToggle && navLinks) {
+        navToggle.addEventListener('click', function(){
+            var isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!isExpanded));
+            navLinks.classList.toggle('active');
+        });
+    }
+    </script>
+</body>
+</html>

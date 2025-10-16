@@ -11,19 +11,25 @@
     <title>Angel Dairies - Home</title>
     <!-- Favicon for browser tab -->
     <link rel="icon" type="image/png" href="angel-inc-logo.png" sizes="32x32" />
+    <!-- Performance: preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Google Fonts: Quicksand for body, Pacifico for headings -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <!-- SEO: short description -->
+    <meta name="description" content="Angel Dairies — quality food distribution: milk, dairy, meats, drinks and more for businesses and individuals in  Montana.">
     <link rel="stylesheet" href="styles.css"> <!-- Main CSS -->
 </head>
 <body>
     <!-- =============================
          Navigation Bar
     ============================= -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="logo">
             <span class="logo-text">Angel Dairies</span>
         </div>
-        <div class="nav-toggle" onclick="toggleMenu()">☰</div> <!-- Hamburger menu for mobile -->
+        <!-- Use a semantic button for accessibility. JS updates aria-expanded when toggled -->
+        <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li class="nav-dropdown">
@@ -43,6 +49,7 @@
             </li>
             <li><a href="team.html">Team</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="recipes.html">Recipes</a></li>
         </ul>
     </nav>
@@ -86,13 +93,16 @@
      <!-- =============================
          Persistent Phone Button
     ============================= -->
-    <a href="tel:+14066718498" class="phone-btn" id="phoneBtn">
-        <span>📞 (406) 671-8498</span>
+    <!-- Phone CTA: explicit aria-label and role for screen readers -->
+    <a href="tel:+14066718498" class="phone-btn" id="phoneBtn" role="button" aria-label="Call Angel Dairies at 406 671 8498">
+        <span aria-hidden="true">📞</span>
+        <span class="sr-only">(406) 671-8498</span>
     </a>
 
     <!-- =============================
          JavaScript
     ============================= -->
-    <script src="script.js"></script> <!-- Main JS -->
+    <!-- Defer main JS for non-blocking load; keeps behavior same when script is at end but is explicit -->
+    <script src="script.js" defer></script> <!-- Main JS -->
 </body>
 </html>
