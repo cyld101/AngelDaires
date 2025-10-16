@@ -772,6 +772,7 @@ html {
     .service-list {
         flex-direction: column;
         gap: 1rem;
+        align-items: center;
     }
     .service-card {
         width: 100%;
