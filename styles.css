@@ -369,23 +369,52 @@ body {
    Footer Styling
 ============================= */
 footer {
-    text-align: center;
-    padding: 0.4rem;
-    background-color: #2c3e50;
+    background: #2c3e50;
     color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.85rem;
-    /* Reduced padding and font size for a smaller footer */
-    line-height: 1.2; /* Tighter line height */
-    min-height: 22px; /* Minimum height for compactness */
+    padding: 15px 0;
+    margin-top: 40px;
 }
-@media (max-width: 700px) {
-    footer {
-        padding: 0.18rem 0.2rem;
-        font-size: 0.7rem;
-        min-height: 16px;
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-content span {
+    white-space: nowrap;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Mobile footer - stack vertically */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .footer-content span {
+        white-space: normal;
+    }
+    
+    /* Hide separators on mobile */
+    .footer-content span:nth-child(even) {
+        display: none;
     }
 }
 
@@ -395,7 +424,7 @@ footer {
 .phone-btn {
     position: fixed;
     right: 2rem;
-    bottom: 0.7rem;
+    bottom: 4rem;
     background: #e74c3c;
     color: white;
     font-size: 1.15rem;
@@ -413,6 +442,104 @@ footer {
 .phone-btn:hover {
     background: #c0392b;
     box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+}
+
+/* =============================
+   Product Search Styling
+============================= */
+.product-controls {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #e9ecef;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search-container {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 12px 45px 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: 'Quicksand', Arial, sans-serif;
+    transition: border-color 0.3s;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #e74c3c;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    pointer-events: none;
+}
+
+.results-info {
+    display: flex;
+    align-items: center;
+}
+
+.clear-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.clear-btn:hover {
+    background: #c0392b;
+}
+
+/* Hidden individual products */
+.product-card.hidden {
+    display: none;
+}
+
+/* Highlight matching text */
+.highlight {
+    background-color: #fff3cd;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .product-controls {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .search-container {
+        max-width: none;
+        width: 100%;
+    }
+    
+    .results-info {
+        justify-content: center;
+    }
 }
 
 /* =============================

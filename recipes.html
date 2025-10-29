@@ -11,19 +11,24 @@
     <title>Angel Dairies - Recipes</title>
     <!-- Favicon for browser tab -->
     <link rel="icon" type="image/png" href="angel-inc-logo.png" sizes="32x32" />
+    <!-- Performance: preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Google Fonts: Quicksand for body, Pacifico for headings -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <!-- SEO: short description -->
+    <meta name="description" content="Angel Dairies recipes — delicious recipe ideas using our quality dairy and food products. Perfect for families and businesses.">
     <link rel="stylesheet" href="styles.css"> <!-- Main CSS -->
 </head>
 <body>
     <!-- =============================
          Navigation Bar
     ============================= -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="logo">
             <span class="logo-text">Angel Dairies</span>
         </div>
-        <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+        <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li class="nav-dropdown">
@@ -109,7 +114,17 @@
          Footer
     ============================= -->
     <footer>
-        <p>© 2025 Angel Dairies. All rights reserved.</p>
+        <div class="footer-content">
+            <span>© 2025 Angel Dairies. All rights reserved.</span>
+            <span>|</span>
+            <span>📞 <a href="tel:+14066718498">(406) 671-8498</a></span>
+            <span>|</span>
+            <span>✉️ office@angeldairies.com</span>
+            <span>|</span>
+            <span>Mon-Fri 8AM-5PM</span>
+            <span>|</span>
+            <span>Billings, MT</span>
+        </div>
     </footer>
 
      <!-- =============================
