@@ -18,16 +18,33 @@ document.querySelectorAll('.dropdown-menu a').forEach(link => {
         const href = this.getAttribute('href');
         if (href && href.startsWith('#')) {
             e.preventDefault();
+            
+            // Clear any active search filters first (if on products page)
+            const searchInput = document.getElementById('productSearch');
+            if (searchInput && window.clearProductSearch) {
+                searchInput.value = '';
+                window.clearProductSearch();
+            }
+            
             // Hide dropdown menu immediately (for mobile)
             var dropdownMenu = document.querySelector('.nav-dropdown .dropdown-menu');
             if (dropdownMenu && window.innerWidth < 800) {
                 dropdownMenu.style.display = 'none';
             }
-            // Wait longer for reflow/layout before scrolling
-            setTimeout(function() {
-                scrollWithOffset(href, 100); // 32px = header height
-            }, 100);
+            
             // Close mobile nav menu if open
+            const navLinks = document.getElementById("navLinks");
+            if (navLinks && navLinks.classList.contains("active")) {
+                navLinks.classList.remove("active");
+            }
+            
+            // Wait for layout changes then scroll
+            setTimeout(function() {
+                scrollWithOffset(href, 100); // 100px = header height
+            }, 150);
+        } else if (href && !href.startsWith('#')) {
+            // For external links (like products.html#cheese-title), let them navigate normally
+            // but close mobile menu first
             const navLinks = document.getElementById("navLinks");
             if (navLinks && navLinks.classList.contains("active")) {
                 navLinks.classList.remove("active");
@@ -124,6 +141,9 @@ function initializeProductFilters() {
         clearFiltersBtn.style.display = 'none';
         searchInput.focus(); // Focus back on search input
     }
+    
+    // Expose clear function globally for dropdown navigation
+    window.clearProductSearch = clearSearch;
     
     // Event listeners
     searchInput.addEventListener('input', function() {
