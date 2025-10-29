@@ -617,19 +617,20 @@ footer {
 }
 .team-member-card {
     background: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
-    padding: 1.2rem 1.5rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+    padding: 1.5rem;
     min-width: 180px;
     max-width: 220px;
     flex: 1 1 180px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    transition: box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 .team-member-card:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(44,62,80,0.16);
 }
 .team-member-card h3 {
     font-size: 1.2rem;
@@ -703,9 +704,9 @@ footer {
 }
 .product-card {
     background: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
-    padding: 1rem 1.2rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+    padding: 1.5rem 1.2rem;
     min-width: 180px;
     max-width: 220px;
     flex: 1 1 180px;
@@ -713,10 +714,11 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
-    transition: box-shadow 0.18s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 .product-card:hover {
-    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(44,62,80,0.16);
 }
 .product-card h3, .product-card span, .product-card p {
     margin: 0;
