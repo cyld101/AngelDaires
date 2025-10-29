@@ -115,8 +115,10 @@
      <!-- =============================
          Persistent Phone Button
     ============================= -->
-    <a href="tel:+14066718498" class="phone-btn" id="phoneBtn">
-        <span>📞 (406) 671-8498</span>
+    <!-- Phone CTA: explicit aria-label and role for screen readers -->
+    <a href="tel:+14066718498" class="phone-btn" id="phoneBtn" role="button" aria-label="Call Angel Dairies at 406 671 8498">
+        <span aria-hidden="true">📞</span>
+        <span class="sr-only">(406) 671-8498</span>
     </a>
 
     <!-- =============================
