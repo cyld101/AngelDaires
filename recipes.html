@@ -1,6 +1,6 @@
 <!--
 ====================================================
- Angel Dairies - Recipes Page
+ Angel Dairies - Recipe Collection
 ====================================================
 -->
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angel Dairies - Recipes</title>
+    <title>Recipe Collection - Angel Dairies Quality Ingredients</title>
     <!-- Favicon for browser tab -->
     <link rel="icon" type="image/png" href="angel-inc-logo.png" sizes="32x32" />
     <!-- Performance: preconnect to Google Fonts -->
@@ -16,8 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Google Fonts: Quicksand for body, Pacifico for headings -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-    <!-- SEO: short description -->
-    <meta name="description" content="Angel Dairies recipes — delicious recipe ideas using our quality dairy and food products. Perfect for families and businesses.">
+    <!-- SEO: comprehensive description -->
+    <meta name="description" content="Discover delicious recipes using Angel Dairies premium dairy products. From comfort foods to gourmet dishes, find inspiration for your kitchen with our quality ingredients.">
     <link rel="stylesheet" href="styles.css"> <!-- Main CSS -->
 </head>
 <body>
@@ -25,183 +25,495 @@
          Navigation Bar
     ============================= -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="logo">
-            <span class="logo-text">Angel Dairies</span>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Angel Dairies</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="products.html">Products ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html#butter-title">Butter & Margarine</a></li>
+                        <li><a href="products.html#cheese-title">Cheese</a></li>
+                        <li><a href="products.html#meats-title">Meats</a></li>
+                        <li><a href="products.html#dips-title">Dips & Spreads</a></li>
+                        <li><a href="products.html#drinks-title">Drinks & Juices</a></li>
+                        <li><a href="products.html#chocmilk-title">Flavored Milk</a></li>
+                        <li><a href="products.html#milk-title">Milk & Dairy</a></li>
+                        <li><a href="products.html#icecream-title">Ice Cream</a></li>
+                        <li><a href="products.html#wilcoxons-title">Wilcoxons Products</a></li>
+                        <li><a href="products.html#misc-title">Sides</a></li>
+                    </ul>
+                </li>
+                <li><a href="team.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="recipes.html" class="active">Recipes</a></li>
+            </ul>
         </div>
-        <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li class="nav-dropdown">
-                <a href="products.html">Products ▼</a>
-                <ul class="dropdown-menu">
-                    <li><a href="products.html#butter-title">Butter & Margarine</a></li>
-                    <li><a href="products.html#cheese-title">Cheese</a></li>
-                    <li><a href="products.html#meats-title">Meats</a></li>
-                    <li><a href="products.html#dips-title">Dips & Spreads</a></li>
-                    <li><a href="products.html#drinks-title">Drinks & Juices</a></li>
-                    <li><a href="products.html#chocmilk-title">Flavored Milk</a></li>
-                    <li><a href="products.html#milk-title">Milk & Dairy</a></li>
-                    <li><a href="products.html#icecream-title">Ice Cream</a></li>
-                    <li><a href="products.html#wilcoxons-title">Wilcoxons Products</a></li>
-                    <li><a href="products.html#misc-title">Sides</a></li>
-                </ul>
-            </li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-        </ul>
     </nav>
 
     <!-- =============================
-         Recipes Section
+         Recipes Hero Section
     ============================= -->
-    <section class="content">
-        <h1>Recipes Using Our Products</h1>
-        <div class="recipe-list">
-            <!-- Recipe Card 1 -->
-            <div class="recipe">
-                <h3>Three-Cheese Blend</h3>
-                <ul>
-                    <li>1 cup Shredded Cheddar 5 lb.</li>
-                    <li>1 cup Shredded Mozzarella 5 lb.</li>
-                    <li>1/2 cup Grated Parmesan 5 lb.</li>
-                </ul>
-                <p><strong>Instructions:</strong> Mix all three cheeses together for the perfect pizza topping, quesadilla filling, or pasta garnish. Store in refrigerator and use as needed for any dish requiring melted cheese.</p>
+    <section class="recipes-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Recipe Collection</h1>
+                    <p class="hero-subtitle">Discover delicious recipes featuring Angel Dairies premium dairy products. From comfort food classics to gourmet creations, find your next culinary inspiration.</p>
+                    <div class="hero-cta">
+                        <a href="#recipe-categories" class="cta-primary">
+                            <span>Explore Recipes</span>
+                            <span>👨‍🍳</span>
+                        </a>
+                        <a href="products.html" class="cta-secondary">Shop Ingredients</a>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">12+</span>
+                        <span class="stat-label">Delicious Recipes</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Recipe Categories</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Quality Ingredients</span>
+                    </div>
+                </div>
             </div>
-            <!-- Recipe Card 2 -->
-            <div class="recipe">
-                <h3>Cottage Cheese Berry Bowl</h3>
-                <ul>
-                    <li>1 cup Cottage Cheese (4%)</li>
-                    <li>1/2 cup granola</li>
-                    <li>1/2 cup fresh berries</li>
-                    <li>1 tbsp honey</li>
-                    <li>Chopped nuts (optional)</li>
-                </ul>
-                <p><strong>Instructions:</strong> Layer cottage cheese, granola, and berries in a bowl. Drizzle with honey and add nuts if desired. A protein-packed breakfast!</p>
+        </div>
+    </section>
+
+    <!-- =============================
+         Recipe Controls
+    ============================= -->
+    <section class="recipe-controls">
+        <div class="container">
+            <div class="controls-content">
+                <div class="search-container">
+                    <input type="text" id="recipeSearch" placeholder="Search recipes..." aria-label="Search recipes">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All Recipes</button>
+                    <button class="filter-btn" data-category="appetizers">🧀 Appetizers</button>
+                    <button class="filter-btn" data-category="main-dishes">🍲 Main Dishes</button>
+                    <button class="filter-btn" data-category="beverages">🥤 Beverages</button>
+                    <button class="filter-btn" data-category="desserts">🍨 Desserts</button>
+                </div>
+                <button id="clearRecipeFilters" class="clear-btn" style="display: none;">Clear Filters</button>
             </div>
-            <!-- Recipe Card 3 -->
-            <div class="recipe">
-                <h3>Vanilla Chocolate Swirl</h3>
-                <ul>
-                    <li>2 cups Vanilla Ice Cream (3 Gallon)</li>
-                    <li>1 cup Chocolate Milk (Half Gallon TruMoo)</li>
-                </ul>
-                <p><strong>Instructions:</strong> Let vanilla ice cream soften slightly. Slowly pour chocolate milk over scoops of vanilla ice cream, creating a marbled swirl effect. Serve immediately as a decadent dessert treat.</p>
+        </div>
+    </section>
+    <!-- =============================
+         Recipe Collection
+    ============================= -->
+    <section class="recipe-collection" id="recipe-categories">
+        <div class="container">
+            
+            <!-- Appetizers & Dips -->
+            <div class="recipe-category" data-category="appetizers">
+                <h2 class="category-title">🧀 Appetizers & Dips</h2>
+                <div class="recipe-grid">
+                    
+                    <article class="recipe-card" data-category="appetizers">
+                        <div class="recipe-header">
+                            <h3>Ultimate Cheese Tasting Board</h3>
+                            <div class="recipe-meta">
+                                <span class="difficulty">🟢 Easy</span>
+                                <span class="time">⏱️ 10 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <div class="ingredients">
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>4 oz Sharp Cheddar 8 oz.</li>
+                                    <li>4 oz Pepper Jack 8 oz.</li>
+                                    <li>4 oz Smoked Gouda Roll 6 lb.</li>
+                                    <li>4 oz Blue Cheese Crumbled 5 lb.</li>
+                                    <li>Sliced Swiss Natural 1.5 lb.</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Instructions:</h4>
+                                <p>Arrange all cheeses on a large platter. Let come to room temperature for 30 minutes before serving. Perfect for entertaining or as a protein-rich snack selection.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="appetizers">
+                        <div class="recipe-header">
+                            <h3>Loaded Baked Potato Dip</h3>
+                            <div class="recipe-meta">
+                                <span class="difficulty">🟡 Medium</span>
+                                <span class="time">⏱️ 25 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <div class="ingredients">
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>1 cup sour cream</li>
+                                    <li>20 cream cheese portions (1 oz each), softened</li>
+                                    <li>1 cup sharp cheddar cheese, shredded</li>
+                                    <li>6 strips bacon, cooked and crumbled</li>
+                                    <li>3 green onions, chopped</li>
+                                    <li>1 packet ranch dressing mix</li>
+                                    <li>Tortilla chips for serving</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Instructions:</h4>
+                                <p>Mix cream cheese portions and sour cream until smooth. Stir in ranch mix, half the cheese, bacon, and onions. Top with remaining cheese. Bake at 375°F for 20 minutes until bubbly.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="appetizers">
+                        <div class="recipe-header">
+                            <h3>Cottage Cheese & Sour Cream Dip</h3>
+                            <div class="recipe-meta">
+                                <span class="difficulty">🟢 Easy</span>
+                                <span class="time">⏱️ 5 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <div class="ingredients">
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>2 cups Cottage Cheese 4% 16 oz.</li>
+                                    <li>1 cup Sour Cream 16 oz.</li>
+                                    <li>1/2 cup Shredded Cheddar Jack 5 lb.</li>
+                                    <li>1/4 cup Blue Cheese Crumbled 5 lb.</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Instructions:</h4>
+                                <p>Mix cottage cheese and sour cream until smooth. Fold in shredded cheddar jack and blue cheese crumbles. Chill for 2 hours before serving. Perfect protein-rich dip.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
             </div>
-            <!-- Recipe Card 4 -->
-            <div class="recipe">
-                <h3>Creamy Potato Soup</h3>
-                <ul>
-                    <li>4 cups potatoes, diced</li>
-                    <li>1 cup Half & Half</li>
-                    <li>1/2 cup Whole Milk</li>
-                    <li>1/2 cup onion, chopped</li>
-                    <li>2 tbsp butter</li>
-                    <li>Salt & pepper to taste</li>
-                </ul>
-                <p><strong>Instructions:</strong> Cook potatoes and onion in butter. Add milk and half & half, simmer until thick. Season and serve hot.</p>
+
+            <!-- Main Dishes -->
+            <div class="recipe-category" data-category="main-dishes">
+                <h2 class="category-title">🍲 Main Dishes</h2>
+                <div class="recipe-grid">
+                    
+                    <article class="recipe-card" data-category="main-dishes">
+                        <div class="recipe-header">
+                            <h3>Creamy Beef Stroganoff</h3>
+                            <div class="recipe-meta">
+                                <span class="difficulty">🟡 Medium</span>
+                                <span class="time">⏱️ 30 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <div class="ingredients">
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>1 lb beef strips</li>
+                                    <li>1 cup sour cream</li>
+                                    <li>1/2 cup half & half</li>
+                                    <li>8 oz egg noodles</li>
+                                    <li>1 cup mushrooms, sliced</li>
+                                    <li>2 tbsp butter</li>
+                                    <li>1 packet onion soup mix</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Instructions:</h4>
+                                <p>Brown beef in butter, add mushrooms. Stir in soup mix, sour cream, and half & half, simmer 10 minutes. Serve over cooked noodles.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="main-dishes">
+                        <div class="recipe-header">
+                            <h3>Three-Cheese Blend Pasta</h3>
+                            <div class="recipe-meta">
+                                <span class="difficulty">🟢 Easy</span>
+                                <span class="time">⏱️ 15 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <div class="ingredients">
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>1 cup Shredded Cheddar 5 lb.</li>
+                                    <li>1 cup Shredded Mozzarella 5 lb.</li>
+                                    <li>1/2 cup Grated Parmesan 5 lb.</li>
+                                    <li>1 lb pasta of choice</li>
+                                    <li>2 tbsp butter</li>
+                                    <li>1/4 cup pasta water</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Instructions:</h4>
+                                <p>Cook pasta according to package directions. Mix all three cheeses together. Toss hot pasta with butter, cheese blend, and pasta water until creamy. Perfect for any pasta dish requiring melted cheese.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="main-dishes">
+                        <div class="recipe-header">
+                            <h3>Creamy Potato Soup</h3>
+                            <div class="recipe-meta">
+                                <span class="difficulty">🟡 Medium</span>
+                                <span class="time">⏱️ 40 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <div class="ingredients">
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>4 cups potatoes, diced</li>
+                                    <li>1 cup Half & Half</li>
+                                    <li>1/2 cup Whole Milk</li>
+                                    <li>1/2 cup onion, chopped</li>
+                                    <li>2 tbsp butter</li>
+                                    <li>Salt & pepper to taste</li>
+                                    <li>Fresh chives for garnish</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Instructions:</h4>
+                                <p>Cook potatoes and onion in butter until tender. Add milk and half & half, simmer until thick and creamy. Season with salt and pepper, garnish with fresh chives and serve hot.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="main-dishes">
+                        <div class="recipe-header">
+                            <h3>Garlic Parmesan Mashed Potatoes</h3>
+                            <div class="recipe-meta">
+                                <span class="difficulty">🟢 Easy</span>
+                                <span class="time">⏱️ 25 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <div class="ingredients">
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>3 lbs Yukon potatoes, peeled</li>
+                                    <li>1/2 cup butter</li>
+                                    <li>1/2 cup half & half</li>
+                                    <li>1/2 cup grated parmesan cheese</li>
+                                    <li>4 cloves garlic, minced</li>
+                                    <li>Salt and pepper to taste</li>
+                                    <li>Fresh chives for garnish</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Instructions:</h4>
+                                <p>Boil potatoes until tender, 15-20 minutes. Mash with butter and half & half until smooth. Stir in parmesan, garlic, salt, and pepper. Garnish with chives and serve hot.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
             </div>
-            <!-- Recipe Card 5 -->
-            <div class="recipe">
-                <h3>Ultimate Cheese Tasting Board</h3>
-                <ul>
-                    <li>4 oz Sharp Cheddar 8 oz.</li>
-                    <li>4 oz Pepper Jack 8 oz.</li>
-                    <li>4 oz Smoked Gouda Roll 6 lb.</li>
-                    <li>4 oz Blue Cheese Crumbled 5 lb.</li>
-                    <li>Sliced Swiss Natural 1.5 lb.</li>
-                </ul>
-                <p><strong>Instructions:</strong> Arrange all cheeses on a large platter. Let come to room temperature for 30 minutes before serving. Perfect for entertaining or as a protein-rich snack selection.</p>
+
+            <!-- Beverages -->
+            <div class="recipe-category" data-category="beverages">
+                <h2 class="category-title">🥤 Beverages</h2>
+                <div class="recipe-grid">
+                    
+                    <article class="recipe-card" data-category="beverages">
+                        <div class="recipe-header">
+                            <h3>Classic Strawberry Milkshake</h3>
+                            <div class="recipe-meta">
+                                <span class="difficulty">🟢 Easy</span>
+                                <span class="time">⏱️ 5 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <div class="ingredients">
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>2 cups Vanilla Ice Cream</li>
+                                    <li>1/2 cup whole milk</li>
+                                    <li>1/2 cup fresh strawberries</li>
+                                    <li>2 tbsp sugar (optional)</li>
+                                    <li>1 tsp vanilla extract</li>
+                                    <li>Reddi Whipping Cream for topping</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Instructions:</h4>
+                                <p>Blend ice cream, milk, strawberries, sugar, and vanilla until smooth. Pour into glasses, top with whipped cream and fresh strawberry.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="beverages">
+                        <div class="recipe-header">
+                            <h3>Cookies & Cream Milkshake</h3>
+                            <div class="recipe-meta">
+                                <span class="difficulty">🟢 Easy</span>
+                                <span class="time">⏱️ 8 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <div class="ingredients">
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>2 cups vanilla ice cream</li>
+                                    <li>1/2 cup whole milk</li>
+                                    <li>6 chocolate sandwich cookies</li>
+                                    <li>1/4 cup half & half</li>
+                                    <li>2 tbsp powdered sugar</li>
+                                    <li>Extra cookies for garnish</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Instructions:</h4>
+                                <p>Blend ice cream, milk, and 4 cookies until smooth. In a separate bowl, whip half & half with powdered sugar until thick. Pour milkshake into glasses, top with whipped mixture and crushed cookies.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="beverages">
+                        <div class="recipe-header">
+                            <h3>Strawberry Chocolate Milk Float</h3>
+                            <div class="recipe-meta">
+                                <span class="difficulty">🟢 Easy</span>
+                                <span class="time">⏱️ 3 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <div class="ingredients">
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>1 cup Chocolate Milk (TruMoo Whole)</li>
+                                    <li>2 scoops Vanilla Ice Cream (3 Gallon)</li>
+                                    <li>1/2 cup Strawberry Milk (14 oz. ESL)</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Instructions:</h4>
+                                <p>Pour chocolate milk into a tall glass. Add scoops of vanilla ice cream. Slowly drizzle strawberry milk over the top. Serve with a straw and spoon for the ultimate milk float experience.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
             </div>
-            <!-- Recipe Card 6 -->
-            <div class="recipe">
-                <h3>Cottage Cheese & Sour Cream Dip</h3>
-                <ul>
-                    <li>2 cups Cottage Cheese 4% 16 oz.</li>
-                    <li>1 cup Sour Cream 16 oz.</li>
-                    <li>1/2 cup Shredded Cheddar Jack 5 lb.</li>
-                    <li>1/4 cup Blue Cheese Crumbled 5 lb.</li>
-                </ul>
-                <p><strong>Instructions:</strong> Mix cottage cheese and sour cream until smooth. Fold in shredded cheddar jack and blue cheese crumbles. Chill for 2 hours before serving. Perfect protein-rich dip.</p>
+
+            <!-- Desserts & Breakfast -->
+            <div class="recipe-category" data-category="desserts">
+                <h2 class="category-title">🍨 Desserts & Breakfast</h2>
+                <div class="recipe-grid">
+                    
+                    <article class="recipe-card" data-category="desserts">
+                        <div class="recipe-header">
+                            <h3>Cottage Cheese Berry Bowl</h3>
+                            <div class="recipe-meta">
+                                <span class="difficulty">🟢 Easy</span>
+                                <span class="time">⏱️ 5 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <div class="ingredients">
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>1 cup Cottage Cheese (4%)</li>
+                                    <li>1/2 cup granola</li>
+                                    <li>1/2 cup fresh berries</li>
+                                    <li>1 tbsp honey</li>
+                                    <li>Chopped nuts (optional)</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Instructions:</h4>
+                                <p>Layer cottage cheese, granola, and berries in a bowl. Drizzle with honey and add nuts if desired. A protein-packed breakfast that's as delicious as it is nutritious!</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="desserts">
+                        <div class="recipe-header">
+                            <h3>Vanilla Chocolate Swirl</h3>
+                            <div class="recipe-meta">
+                                <span class="difficulty">🟢 Easy</span>
+                                <span class="time">⏱️ 3 min</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <div class="ingredients">
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>2 cups Vanilla Ice Cream (3 Gallon)</li>
+                                    <li>1 cup Chocolate Milk (Half Gallon TruMoo)</li>
+                                    <li>Fresh mint for garnish (optional)</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Instructions:</h4>
+                                <p>Let vanilla ice cream soften slightly. Slowly pour chocolate milk over scoops of vanilla ice cream, creating a marbled swirl effect. Garnish with fresh mint and serve immediately as a decadent dessert treat.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
             </div>
-            <!-- Recipe Card 7 -->
-            <div class="recipe">
-                <h3>Creamy Beef Stroganoff</h3>
-                <ul>
-                    <li>1 lb beef strips</li>
-                    <li>1 cup sour cream</li>
-                    <li>1/2 cup half & half</li>
-                    <li>8 oz egg noodles</li>
-                    <li>1 cup mushrooms, sliced</li>
-                    <li>2 tbsp butter</li>
-                    <li>1 packet onion soup mix</li>
-                </ul>
-                <p><strong>Instructions:</strong> Brown beef in butter, add mushrooms. Stir in soup mix, sour cream, and half & half, simmer 10 minutes. Serve over cooked noodles.</p>
+
+        </div>
+    </section>
+
+    <!-- =============================
+         Recipe Tips Section
+    ============================= -->
+    <section class="recipe-tips">
+        <div class="container">
+            <div class="tips-content">
+                <h2>Cooking Tips & Tricks</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">🧊</div>
+                        <h3>Keep It Cold</h3>
+                        <p>Always keep dairy products refrigerated until ready to use. This ensures maximum freshness and flavor in your recipes.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🌡️</div>
+                        <h3>Room Temperature</h3>
+                        <p>Let cream cheese and butter come to room temperature for easier mixing and smoother textures in your dishes.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">⚖️</div>
+                        <h3>Measure Carefully</h3>
+                        <p>Use proper measuring tools for best results. Level off dry ingredients and use liquid measuring cups for dairy products.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🔥</div>
+                        <h3>Low & Slow</h3>
+                        <p>When heating dairy products, use low heat to prevent curdling and maintain the smooth, creamy texture.</p>
+                    </div>
+                </div>
             </div>
-            <!-- Recipe Card 8 -->
-            <div class="recipe">
-                <h3>Classic Strawberry Milkshake</h3>
-                <ul>
-                    <li>2 cups Vanilla Ice Cream</li>
-                    <li>1/2 cup whole milk</li>
-                    <li>1/2 cup fresh strawberries</li>
-                    <li>2 tbsp sugar (optional)</li>
-                    <li>1 tsp vanilla extract</li>
-                    <li>Reddi Whipping Cream for topping</li>
-                </ul>
-                <p><strong>Instructions:</strong> Blend ice cream, milk, strawberries, sugar, and vanilla until smooth. Pour into glasses, top with whipped cream and fresh strawberry.</p>
-            </div>
-            <!-- Recipe Card 9 -->
-            <div class="recipe">
-                <h3>Loaded Baked Potato Dip</h3>
-                <ul>
-                    <li>1 cup sour cream</li>
-                    <li>20 cream cheese portions (1 oz each), softened</li>
-                    <li>1 cup sharp cheddar cheese, shredded</li>
-                    <li>6 strips bacon, cooked and crumbled</li>
-                    <li>3 green onions, chopped</li>
-                    <li>1 packet ranch dressing mix</li>
-                    <li>Tortilla chips for serving</li>
-                </ul>
-                <p><strong>Instructions:</strong> Mix cream cheese portions and sour cream until smooth. Stir in ranch mix, half the cheese, bacon, and onions. Top with remaining cheese. Bake at 375°F for 20 minutes until bubbly.</p>
-            </div>
-            <!-- Recipe Card 10 -->
-            <div class="recipe">
-                <h3>Strawberry Chocolate Milk Float</h3>
-                <ul>
-                    <li>1 cup Chocolate Milk (TruMoo Whole)</li>
-                    <li>2 scoops Vanilla Ice Cream (3 Gallon)</li>
-                    <li>1/2 cup Strawberry Milk (14 oz. ESL)</li>
-                </ul>
-                <p><strong>Instructions:</strong> Pour chocolate milk into a tall glass. Add scoops of vanilla ice cream. Slowly drizzle strawberry milk over the top. Serve with a straw and spoon for the ultimate milk float experience.</p>
-            </div>
-            <!-- Recipe Card 11 -->
-            <div class="recipe">
-                <h3>Garlic Parmesan Mashed Potatoes</h3>
-                <ul>
-                    <li>3 lbs Yukon potatoes, peeled</li>
-                    <li>1/2 cup butter</li>
-                    <li>1/2 cup half & half</li>
-                    <li>1/2 cup grated parmesan cheese</li>
-                    <li>4 cloves garlic, minced</li>
-                    <li>Salt and pepper to taste</li>
-                    <li>Fresh chives for garnish</li>
-                </ul>
-                <p><strong>Instructions:</strong> Boil potatoes until tender, 15-20 minutes. Mash with butter and half & half. Stir in parmesan, garlic, salt, and pepper. Garnish with chives and serve hot.</p>
-            </div>
-            <!-- Recipe Card 12 -->
-            <div class="recipe">
-                <h3>Cookies & Cream Milkshake</h3>
-                <ul>
-                    <li>2 cups vanilla ice cream</li>
-                    <li>1/2 cup whole milk</li>
-                    <li>6 chocolate sandwich cookies</li>
-                    <li>1/4 cup half & half</li>
-                    <li>2 tbsp powdered sugar</li>
-                    <li>Extra cookies for garnish</li>
-                </ul>
-                <p><strong>Instructions:</strong> Blend ice cream, milk, and 4 cookies until smooth. In a separate bowl, whip half & half with powdered sugar until thick. Pour milkshake into glasses, top with whipped mixture and crushed cookies.</p>
+        </div>
+    </section>
+
+    <!-- =============================
+         Call to Action
+    ============================= -->
+    <section class="recipe-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Cooking?</h2>
+                <p>Get all the premium dairy ingredients you need for these delicious recipes delivered fresh to your door.</p>
+                <div class="cta-buttons">
+                    <a href="products.html" class="btn-primary">Shop Ingredients</a>
+                    <a href="tel:+14066718498" class="btn-secondary">Call to Order</a>
+                </div>
             </div>
         </div>
     </section>

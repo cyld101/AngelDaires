@@ -16,62 +16,185 @@
     <link rel="stylesheet" href="styles.css"> <!-- Main CSS -->
 </head>
 <body>
-    <!-- Header/Navbar -->
+    <!-- =============================
+         Navigation Bar
+    ============================= -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="logo">
-            <span class="logo-text">Angel Dairies</span>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Angel Dairies</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="products.html">Products ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html#butter-title">Butter & Margarine</a></li>
+                        <li><a href="products.html#cheese-title">Cheese</a></li>
+                        <li><a href="products.html#meats-title">Meats</a></li>
+                        <li><a href="products.html#dips-title">Dips & Spreads</a></li>
+                        <li><a href="products.html#drinks-title">Drinks & Juices</a></li>
+                        <li><a href="products.html#chocmilk-title">Flavored Milk</a></li>
+                        <li><a href="products.html#milk-title">Milk & Dairy</a></li>
+                        <li><a href="products.html#icecream-title">Ice Cream</a></li>
+                        <li><a href="products.html#wilcoxons-title">Wilcoxons Products</a></li>
+                        <li><a href="products.html#misc-title">Sides</a></li>
+                    </ul>
+                </li>
+                <li><a href="team.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+            </ul>
         </div>
-        <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li class="nav-dropdown">
-                <a href="products.html">Products ▼</a>
-                <ul class="dropdown-menu">
-                    <li><a href="products.html#butter-title">Butter & Margarine</a></li>
-                    <li><a href="products.html#cheese-title">Cheese</a></li>
-                    <li><a href="products.html#meats-title">Meats</a></li>
-                    <li><a href="products.html#dips-title">Dips & Spreads</a></li>
-                    <li><a href="products.html#drinks-title">Drinks & Juices</a></li>
-                    <li><a href="products.html#chocmilk-title">Flavored Milk</a></li>
-                    <li><a href="products.html#milk-title">Milk & Dairy</a></li>
-                    <li><a href="products.html#icecream-title">Ice Cream</a></li>
-                    <li><a href="products.html#wilcoxons-title">Wilcoxons Products</a></li>
-                    <li><a href="products.html#misc-title">Sides</a></li>
-                </ul>
-            </li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-        </ul>
     </nav>
 
     <!-- =============================
-         Persistent Phone Button
+         Services Hero Section
     ============================= -->
-    <!-- Phone CTA: explicit aria-label and role for screen readers -->
-    <a href="tel:+14066718498" class="phone-btn" id="phoneBtn" role="button" aria-label="Call Angel Dairies at 406 671 8498">
-        <span aria-hidden="true">📞</span>
-        <span class="sr-only">(406) 671-8498</span>
-    </a>
-
-    <!-- Main Content -->
-    <section class="content">
-        <h1>Our Services</h1>
-        <p>We offer a range of services to support our customers and community. Explore what Angel Dairies can do for you!</p>
-        <div class="service-list" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
-            <div class="service-card" style="background: #fff; border-radius: 1rem; box-shadow: 0 1px 6px rgba(0,0,0,0.07); padding: 1.2rem 1.5rem; min-width: 180px; max-width: 220px; flex: 1 1 180px; display: flex; flex-direction: column; align-items: flex-start;">
-                <h3>Manage Inventory</h3>
-                <p>We stock and rotate.</p> 
-                <p>We dispose of outdated products and give you credits.</p>
-            </div>
-            <div class="service-card" style="background: #fff; border-radius: 1rem; box-shadow: 0 1px 6px rgba(0,0,0,0.07); padding: 1.2rem 1.5rem; min-width: 180px; max-width: 220px; flex: 1 1 180px; display: flex; flex-direction: column; align-items: flex-start;">
-                <h3>Create Par Level</h3>
-                <p>We establish a par level and keep you stocked to your custom par level.</p>
+    <section class="services-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Dairy Services</h1>
+                <p class="hero-subtitle">Comprehensive wholesale distribution and inventory management solutions for Montana businesses</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- =============================
+         Main Services Section
+    ============================= -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Inventory Management -->
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Inventory Management</h3>
+                    <p>Complete inventory solutions including stocking, rotation, and disposal of outdated products with full credit returns.</p>
+                    <ul class="service-features">
+                        <li>Regular stock rotation</li>
+                        <li>Automated reordering</li>
+                        <li>Credit for expired products</li>
+                        <li>Real-time inventory tracking</li>
+                    </ul>
+                </div>
+
+                <!-- Par Level Management -->
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Custom Par Levels</h3>
+                    <p>We establish and maintain customized par levels tailored to your business needs, ensuring you never run out of essential products.</p>
+                    <ul class="service-features">
+                        <li>Custom stock level setup</li>
+                        <li>Automatic replenishment</li>
+                        <li>Demand forecasting</li>
+                        <li>Seasonal adjustments</li>
+                    </ul>
+                </div>
+
+                <!-- Delivery Services -->
+                <div class="service-card">
+                    <div class="service-icon">🚚</div>
+                    <h3>Reliable Delivery</h3>
+                    <p>Scheduled and emergency delivery services across Montana with temperature-controlled transportation for product freshness.</p>
+                    <ul class="service-features">
+                        <li>Scheduled weekly deliveries</li>
+                        <li>Emergency restocking</li>
+                        <li>Temperature-controlled transport</li>
+                        <li>Flexible delivery windows</li>
+                    </ul>
+                </div>
+
+                <!-- Custom Orders -->
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Custom Orders</h3>
+                    <p>Special orders and custom product sourcing to meet your unique business requirements and customer demands.</p>
+                    <ul class="service-features">
+                        <li>Special product sourcing</li>
+                        <li>Bulk order discounts</li>
+                        <li>Custom packaging options</li>
+                        <li>Private label products</li>
+                    </ul>
+                </div>
+
+                <!-- Account Management -->
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Account Management</h3>
+                    <p>Dedicated account representatives providing personalized service and support for your business operations.</p>
+                    <ul class="service-features">
+                        <li>Dedicated account rep</li>
+                        <li>Monthly business reviews</li>
+                        <li>Cost optimization analysis</li>
+                        <li>24/7 customer support</li>
+                    </ul>
+                </div>
+
+                <!-- Quality Assurance -->
+                <div class="service-card">
+                    <div class="service-icon">✅</div>
+                    <h3>Quality Assurance</h3>
+                    <p>Rigorous quality control processes ensuring all products meet the highest standards for freshness and safety.</p>
+                    <ul class="service-features">
+                        <li>Temperature monitoring</li>
+                        <li>Freshness guarantees</li>
+                        <li>HACCP compliance</li>
+                        <li>Product traceability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================
+         Why Choose Us Section
+    ============================= -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Angel Dairies?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🏆</div>
+                    <h4>30+ Years Experience</h4>
+                    <p>Decades of expertise in dairy distribution and customer service excellence.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🌟</div>
+                    <h4>Local Montana Business</h4>
+                    <p>Supporting local communities with personalized service and regional expertise.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💰</div>
+                    <h4>Competitive Pricing</h4>
+                    <p>Wholesale pricing with volume discounts and cost-effective solutions.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚡</div>
+                    <h4>Fast Response</h4>
+                    <p>Quick response to urgent needs and same-day emergency deliveries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================
+         CTA Section
+    ============================= -->
+    <section class="services-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Partner with Angel Dairies?</h2>
+                <p>Contact us today to discuss your business needs and discover how our services can help your business thrive.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+14066718498" class="btn-primary">📞 Call (406) 671-8498</a>
+                    <a href="index.html#contact" class="btn-secondary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- =============================
          Footer
     ============================= -->
@@ -89,6 +212,17 @@
         </div>
     </footer>
 
+    <!-- =============================
+         Persistent Phone Button
+    ============================= -->
+    <a href="tel:+14066718498" class="phone-btn" id="phoneBtn" role="button" aria-label="Call Angel Dairies at 406 671 8498">
+        <span aria-hidden="true">📞</span>
+        <span class="sr-only">(406) 671-8498</span>
+    </a>
+
+    <!-- =============================
+         JavaScript
+    ============================= -->
     <script src="script.js"></script>
 </body>
 </html>

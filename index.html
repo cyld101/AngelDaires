@@ -17,7 +17,7 @@
     <!-- Google Fonts: Quicksand for body, Pacifico for headings -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
     <!-- SEO: short description -->
-    <meta name="description" content="Angel Dairies — quality food distribution: milk, dairy, meats, drinks and more for businesses and individuals in  Montana.">
+    <meta name="description" content="Angel Dairies - Montana's premier food distribution company. Quality dairy, meat, and beverage products with reliable delivery for restaurants, schools, and businesses.">
     <link rel="stylesheet" href="styles.css"> <!-- Main CSS -->
 </head>
 <body>
@@ -25,61 +25,258 @@
          Navigation Bar
     ============================= -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="logo">
-            <span class="logo-text">Angel Dairies</span>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Angel Dairies</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="products.html">Products ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html#butter-title">Butter & Margarine</a></li>
+                        <li><a href="products.html#cheese-title">Cheese</a></li>
+                        <li><a href="products.html#meats-title">Meats</a></li>
+                        <li><a href="products.html#dips-title">Dips & Spreads</a></li>
+                        <li><a href="products.html#drinks-title">Drinks & Juices</a></li>
+                        <li><a href="products.html#chocmilk-title">Flavored Milk</a></li>
+                        <li><a href="products.html#milk-title">Milk & Dairy</a></li>
+                        <li><a href="products.html#icecream-title">Ice Cream</a></li>
+                        <li><a href="products.html#wilcoxons-title">Wilcoxons Products</a></li>
+                        <li><a href="products.html#misc-title">Sides</a></li>
+                    </ul>
+                </li>
+                <li><a href="team.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="#contact" class="nav-cta">Get Quote</a></li>
+            </ul>
         </div>
-        <!-- Use a semantic button for accessibility. JS updates aria-expanded when toggled -->
-        <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li class="nav-dropdown">
-                <a href="products.html">Products ▼</a>
-                <ul class="dropdown-menu">
-                    <li><a href="products.html#butter-title">Butter & Margarine</a></li>
-                    <li><a href="products.html#cheese-title">Cheese</a></li>
-                    <li><a href="products.html#meats-title">Meats</a></li>
-                    <li><a href="products.html#dips-title">Dips & Spreads</a></li>
-                    <li><a href="products.html#drinks-title">Drinks & Juices</a></li>
-                    <li><a href="products.html#chocmilk-title">Flavored Milk</a></li>
-                    <li><a href="products.html#milk-title">Milk & Dairy</a></li>
-                    <li><a href="products.html#icecream-title">Ice Cream</a></li>
-                    <li><a href="products.html#wilcoxons-title">Wilcoxons Products</a></li>
-                    <li><a href="products.html#misc-title">Sides</a></li>
-                </ul>
-            </li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-        </ul>
     </nav>
 
     <!-- =============================
-         Banner Section
-         Contains main hero content centered on banner image
+         Hero Section
+         Professional hero with value proposition
     ============================= -->
-    <div class="banner banner-with-content">
-        <img src="angel-logo.png" alt="Angel Daires Banner" class="banner-img" />
-        <div class="hero hero-on-banner">
-            <h1 class="animated-title">Welcome to Angel Dairies</h1>
-            <p>We’re a food distribution company dedicated to serving our community with care and quality.</p>
-            <a href="products.html" class="btn">Explore Our Products</a>
+    <section class="hero-professional">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="animated-title">Montana's Premier Food Distribution Partner</h1>
+                <p class="hero-subtitle">Trusted by 500+ businesses across Montana for quality products, reliable delivery, and exceptional service since 1994.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99.8%</span>
+                        <span class="stat-label">On-Time Delivery</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">31+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get Free Quote</a>
+                    <a href="products.html" class="btn btn-secondary">View Products</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="angel-logo.png" alt="Angel Dairies Logo" class="hero-logo">
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- =============================
+         Value Proposition Section
+    ============================= -->
+    <section class="value-proposition">
+        <div class="container">
+            <h2>Why Montana Businesses Choose Angel Dairies</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚛</div>
+                    <h3>Reliable Delivery</h3>
+                    <p>99.8% on-time delivery rate with flexible scheduling that works around your business hours.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Premium Quality</h3>
+                    <p>Only the finest dairy, meat, and beverage products from trusted suppliers and local producers.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Volume discounts and transparent pricing that helps your business maintain healthy margins.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Personal Service</h3>
+                    <p>Dedicated account managers who understand your business and respond within 24 hours.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📦</div>
+                    <h3>Inventory Management</h3>
+                    <p>Smart ordering systems that track usage and prevent stockouts automatically.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌟</div>
+                    <h3>31+ Years Experience</h3>
+                    <p>Family-owned business serving Montana since 1994 with deep local knowledge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================
+         Customer Testimonials
+    ============================= -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Angel Dairies has been our reliable partner for over 10 years. Their quality and service are unmatched in Montana."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Sarah Johnson</strong>
+                        <span>Owner, Mountain View Restaurant</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Never had a late delivery in 5 years. Their inventory management system has saved us thousands in waste."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Mike Thompson</strong>
+                        <span>Manager, Billings School District</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The personal service and competitive pricing make Angel Dairies our go-to food distributor."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Lisa Chen</strong>
+                        <span>Owner, Daily Grind Coffee Shop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- =============================
          About Section
     ============================= -->
-    <section class="about">
-        <h2>About Us</h2>
-        <p>Angel Dairies is a leading food distribution company established with a mission to provide high-quality food products to our community. With years of experience in the industry, we pride ourselves on our commitment to excellence, reliability, and customer satisfaction. Our team works tirelessly to ensure that every product we distribute meets the highest standards of quality and freshness.</p>
+    <section class="about-professional">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Serving Montana's Food Service Industry Since 1994</h2>
+                    <p class="about-lead">Angel Dairies isn't just a distributor – we're your strategic partner in success. Our family-owned business has grown alongside Montana's restaurant, hospitality, and institutional food service sectors for over three decades.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">500+</span>
+                            <span class="highlight-text">Businesses Served</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">181</span>
+                            <span class="highlight-text">Products Available</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">24/7</span>
+                            <span class="highlight-text">Customer Support</span>
+                        </div>
+                    </div>
+                    <p>From premium dairy products to specialty beverages, from fresh meats to artisanal ingredients – we source, store, and deliver everything your business needs to thrive. Our state-of-the-art facilities and experienced team ensure every order meets our rigorous quality standards.</p>
+                </div>
+                <div class="about-features">
+                    <h3>What Sets Us Apart</h3>
+                    <ul class="features-list">
+                        <li>✓ Family-owned Montana business with deep local roots</li>
+                        <li>✓ Climate-controlled warehouses and refrigerated delivery</li>
+                        <li>✓ Flexible ordering with same-day emergency delivery</li>
+                        <li>✓ Competitive bulk pricing with payment terms</li>
+                        <li>✓ Professional account management and menu planning</li>
+                        <li>✓ Full licensing and food safety certifications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- =============================
-         Services Section
+         Featured Products Section
     ============================= -->
-    <section class="services">
-        <h2>Our Services</h2>
-        <p>We offer a comprehensive range of food distribution services tailored to meet the needs of our clients. From sourcing premium ingredients to delivering them directly to your doorstep, Angel Daires handles every step of the process with care and precision. Our services include wholesale distribution, custom order fulfillment, and timely delivery solutions for businesses and individuals alike.</p>
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Product Categories</h2>
+            <p class="section-subtitle">From farm-fresh dairy to premium beverages, we stock everything your business needs</p>
+            <div class="products-grid">
+                <div class="product-category">
+                    <div class="category-icon">🥛</div>
+                    <h3>Dairy Products</h3>
+                    <p>Fresh milk, artisanal cheeses, premium butter, and specialty dairy items from local and national suppliers.</p>
+                    <a href="products.html#milk-title" class="category-link">View Dairy →</a>
+                </div>
+                <div class="product-category">
+                    <div class="category-icon">🥩</div>
+                    <h3>Fresh Meats</h3>
+                    <p>High-quality beef, pork, poultry, and specialty proteins. Custom cuts available for restaurants.</p>
+                    <a href="products.html#meats-title" class="category-link">View Meats →</a>
+                </div>
+                <div class="product-category">
+                    <div class="category-icon">🥤</div>
+                    <h3>Beverages</h3>
+                    <p>Juices, soft drinks, energy drinks, and specialty beverages for all occasions and establishments.</p>
+                    <a href="products.html#drinks-title" class="category-link">View Beverages →</a>
+                </div>
+                <div class="product-category">
+                    <div class="category-icon">🍦</div>
+                    <h3>Frozen Treats</h3>
+                    <p>Premium ice cream, frozen desserts, and novelty items perfect for restaurants and convenience stores.</p>
+                    <a href="products.html#icecream-title" class="category-link">View Frozen →</a>
+                </div>
+            </div>
+            <div class="products-cta">
+                <a href="products.html" class="btn btn-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================
+         Call to Action Section
+    ============================= -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Partner with Angel Dairies?</h2>
+                <p>Join hundreds of Montana businesses who trust us for their food distribution needs. Get a free quote today and discover why we're Montana's preferred food distributor.</p>
+                <div class="contact-options">
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <h3>Call Today</h3>
+                        <p><a href="tel:+14066718498">(406) 671-8498</a></p>
+                        <span>Mon-Fri 8AM-5PM</span>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:office@angeldairies.com">office@angeldairies.com</a></p>
+                        <span>24-hour responses</span>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📍</div>
+                        <h3>Visit Us</h3>
+                        <p>Billings, Montana</p>
+                        <span>Meetings by appointment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- =============================
