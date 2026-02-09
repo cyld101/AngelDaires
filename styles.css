@@ -1073,9 +1073,9 @@ p {
 
 /* About CTA section */
 .about-cta {
-    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    background: #2c3e50;
     color: white;
-    padding: 4rem 0;
+    padding: 3.5rem 0;
     text-align: center;
 }
 
@@ -1230,9 +1230,9 @@ p {
 
 /* Services call-to-action section */
 .services-cta {
-    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    background: #2c3e50;
     color: white;
-    padding: 4rem 0;
+    padding: 3.5rem 0;
     text-align: center;
 }
 
@@ -1569,9 +1569,9 @@ p {
 
 /* Recipe CTA section */
 .recipe-cta {
-    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    background: #2c3e50;
     color: white;
-    padding: 4rem 0;
+    padding: 3.5rem 0;
     text-align: center;
 }
 
@@ -3068,8 +3068,8 @@ body {
    Call to Action Section
 ============================= */
 .cta-section {
-    padding: 5rem 0;
-    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    padding: 3.5rem 0;
+    background: #2c3e50;
     color: white;
 }
 
@@ -4015,9 +4015,9 @@ footer {
 }
 
 .services-cta {
-    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    background: #2c3e50;
     color: white;
-    padding: 4rem 0;
+    padding: 3.5rem 0;
     text-align: center;
 }
 
